@@ -49,8 +49,10 @@ echo -e "${NC}\n"
 echo_info "验证文件: $ENV_FILE"
 echo ""
 
-# 加载环境变量
-export $(grep -v '^#' "$ENV_FILE" | xargs)
+# 加载环境变量（安全方式，支持特殊字符）
+set -a
+source "$ENV_FILE"
+set +a
 
 # 验证计数器
 ERRORS=0
