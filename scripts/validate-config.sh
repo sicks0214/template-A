@@ -49,21 +49,17 @@ echo -e "${NC}\n"
 echo_info "验证文件: $ENV_FILE"
 echo ""
 
-# 加载环境变量（使用最可靠的方式）
-while IFS='=' read -r key value; do
+# 加载环境变量（使用grep+eval方式）
+set +e  # 临时关闭错误退出
+while IFS= read -r line; do
     # 跳过注释和空行
-    [[ "$key" =~ ^#.*$ ]] && continue
-    [[ -z "$key" ]] && continue
-    
-    # 移除value前后的空格和引号
-    value="${value%\"}"
-    value="${value#\"}"
-    value="${value%\'}"
-    value="${value#\'}"
+    [[ "$line" =~ ^[[:space:]]*# ]] && continue
+    [[ -z "$line" ]] && continue
     
     # 导出环境变量
-    export "$key=$value"
-done < "$ENV_FILE"
+    export "$line" 2>/dev/null || true
+done < <(grep -E '^[A-Z_]+=.*' "$ENV_FILE" || true)
+set -e  # 恢复错误退出
 
 # 验证计数器
 ERRORS=0
