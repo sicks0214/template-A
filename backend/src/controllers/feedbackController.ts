@@ -60,6 +60,8 @@ export class FeedbackController {
 
       // 构建反馈数据
       const feedbackData: FeedbackData = {
+        site_id: process.env.SITE_ID || 'site3',
+        type: 'feedback',
         content: content.trim(),
         contact: contact?.trim() || undefined,
         rating: rating || undefined,
@@ -128,7 +130,7 @@ export class FeedbackController {
 
       // 如果指定了类别，进行过滤
       const filteredHistory = category 
-        ? history.filter(item => item.category === category)
+        ? history.filter((item: any) => item.category === category)
         : history;
 
       res.status(200).json({
@@ -167,8 +169,8 @@ export class FeedbackController {
         total: history.length,
         categories: this.calculateCategoryStats(history),
         ratings: this.calculateRatingStats(history),
-        recentCount: history.filter(item => {
-          const itemDate = new Date(item.timestamp);
+        recentCount: history.filter((item: any) => {
+          const itemDate = item.created_at ? new Date(item.created_at) : new Date();
           const oneDayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
           return itemDate > oneDayAgo;
         }).length,

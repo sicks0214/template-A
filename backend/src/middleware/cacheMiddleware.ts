@@ -8,7 +8,7 @@ import { pixelArtCache } from '../services/cache/pixelArtCache'
 import { pixelArtErrorHandler } from '../services/pixelArt/errorHandler'
 import * as crypto from 'crypto'
 
-// 扩展Request接口以包含缓存信息
+// 扩展Request接口以包含缓存信息和multer文件
 declare global {
   namespace Express {
     interface Request {
@@ -16,6 +16,7 @@ declare global {
       imageHash?: string
       cacheEnabled?: boolean
       cacheHit?: boolean
+      file?: any  // 使用any避免Multer类型问题
     }
   }
 }
@@ -171,7 +172,7 @@ async function processCacheStorage(req: Request, responseData: any): Promise<voi
     const ttl = calculateTTL(processingTime, complexity)
 
     // 存储到缓存
-    const stored = await cacheManager.set(
+    await cacheManager.set(
       req.cacheKey!,
       responseData.data,
       {
@@ -179,15 +180,13 @@ async function processCacheStorage(req: Request, responseData: any): Promise<voi
       }
     )
 
-    if (stored === true) {
-      console.log('CacheMiddleware: 结果已缓存', {
-        cacheKey: req.cacheKey,
-        ttl: `${ttl}s`,
-        dataSize: `${(dataSize / 1024).toFixed(2)}KB`,
-        complexity,
-        processingTime: `${processingTime}ms`
-      })
-    }
+    console.log('CacheMiddleware: 结果已缓存', {
+      cacheKey: req.cacheKey,
+      ttl: `${ttl}s`,
+      dataSize: `${(dataSize / 1024).toFixed(2)}KB`,
+      complexity,
+      processingTime: `${processingTime}ms`
+    })
 
   } catch (error) {
     console.error('CacheMiddleware: 缓存存储处理失败', error)
@@ -295,22 +294,15 @@ export const cacheClearMiddleware = async (
       return;
     }
 
-    const cleared = await cacheManager.clear()
+    await cacheManager.clear()
     
-    if (cleared === true) {
-      console.log('CacheMiddleware: 缓存已通过API清空')
-      
-      res.status(200).json({
-        success: true,
-        message: '缓存已清空',
-        timestamp: new Date().toISOString()
-      });
-    } else {
-      res.status(500).json({
-        success: false,
-        error: '清空缓存失败'
-      });
-    }
+    console.log('CacheMiddleware: 缓存已通过API清空')
+    
+    res.status(200).json({
+      success: true,
+      message: '缓存已清空',
+      timestamp: new Date().toISOString()
+    });
 
   } catch (error) {
     console.error('CacheMiddleware: 缓存清理中间件出错', error)

@@ -122,20 +122,22 @@ export class PostgreSQLService {
         RETURNING id, analysis_id
       `;
 
+      const metadata = analysis.metadata || {};
+      const imageSize = metadata.imageSize || { width: 0, height: 0 };
       const values = [
         analysis.id,
         'uploaded_image.jpg', // 临时文件名，实际应用中应该传入真实文件名
         0, // 临时文件大小，实际应用中应该传入真实大小
-        analysis.metadata.imageSize.width,
-        analysis.metadata.imageSize.height,
-        analysis.metadata.imageSize.width,
-        analysis.metadata.imageSize.height,
-        JSON.stringify(analysis.extractedColors),
-        JSON.stringify(analysis.dominantColors),
-        JSON.stringify(analysis.palette),
-        JSON.stringify(analysis.metadata),
-        analysis.metadata.processingTime * 1000, // 转换为毫秒
-        analysis.metadata.algorithm,
+        imageSize.width,
+        imageSize.height,
+        imageSize.width,
+        imageSize.height,
+        JSON.stringify(analysis.extractedColors || []),
+        JSON.stringify(analysis.dominantColors || []),
+        JSON.stringify(analysis.palette || []),
+        JSON.stringify(analysis.metadata || {}),
+        (metadata.processingTime || 0) * 1000, // 转换为毫秒
+        metadata.algorithm || 'unknown',
         userIp
       ];
 

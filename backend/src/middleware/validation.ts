@@ -1,6 +1,15 @@
 import { Request, Response, NextFunction } from 'express'
 import Joi from 'joi'
 
+// 扩展Request接口以包含multer文件
+declare global {
+  namespace Express {
+    interface Request {
+      file?: any  // 使用any避免Multer类型问题
+    }
+  }
+}
+
 /**
  * 像素画转换请求验证模式
  */
