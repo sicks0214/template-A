@@ -104,17 +104,12 @@ echo_success "配置验证完成"
 echo_step "步骤 2: 编译TypeScript"
 
 if [ -d "backend/src" ] && [ -f "backend/tsconfig.json" ]; then
-    echo_info "检测到TypeScript项目，开始编译..."
+    echo_info "检测到TypeScript项目，使用Docker编译..."
     cd backend
     
-    # 检查是否有node_modules
-    if [ ! -d "node_modules" ]; then
-        echo_info "安装后端依赖..."
-        npm install
-    fi
-    
-    # 编译
-    npm run build || error_exit "TypeScript编译失败"
+    # 使用Docker容器安装依赖和编译
+    echo_info "使用Docker容器执行npm install && npm run build..."
+    docker run --rm -v $(pwd):/app -w /app node:18-alpine sh -c "npm install && npm run build" || error_exit "TypeScript编译失败"
     
     # 验证编译结果
     if [ ! -d "dist" ]; then
