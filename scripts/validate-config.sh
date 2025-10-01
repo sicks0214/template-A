@@ -51,7 +51,9 @@ echo ""
 
 # 加载环境变量（安全方式，支持特殊字符）
 set -a
-source "$ENV_FILE"
+set +e  # 临时关闭错误退出，避免source失败导致脚本中断
+source "$ENV_FILE" 2>/dev/null || true
+set -e  # 恢复错误退出
 set +a
 
 # 验证计数器
