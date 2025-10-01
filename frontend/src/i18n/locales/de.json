@@ -1,0 +1,284 @@
+{
+  "homepage": {
+    "navigation": {
+      "features": "Funktionen",
+      "howItWorks": "Wie es funktioniert",
+      "examples": "Beispiele",
+      "about": "Über uns",
+      "startAnalyzing": "Analyse starten"
+    },
+    "hero": {
+      "announcement": "🎨 KI-gestütztes Farbanalyse-Tool jetzt verfügbar.",
+      "learnMore": "Mehr erfahren",
+      "title": "Entdecken Sie perfekte Farben in jedem Bild",
+      "subtitle": "Laden Sie ein beliebiges Bild hoch und extrahieren Sie sofort wunderschöne Farbpaletten. Analysieren, auswählen und exportieren Sie Farben mit professioneller Präzision für Ihre Designprojekte.",
+      "startColorAnalysis": "Farbanalyse starten",
+      "howItWorks": "Wie es funktioniert"
+    },
+    "examples": {
+      "title": "Sehen Sie renk kodu bulma in Aktion",
+      "subtitle": "Echte Beispiele von Farbpaletten aus schönen Bildern extrahiert",
+      "sunsetLandscape": {
+        "title": "Sonnenuntergang Landschaft",
+        "description": "Warme, lebendige Palette perfekt für Herbstdesigns"
+      },
+      "oceanWaves": {
+        "title": "Meereswellen",
+        "description": "Kühle, beruhigende Palette ideal für Wellness-Marken"
+      },
+      "forestNature": {
+        "title": "Waldnatur",
+        "description": "Natürliche, erdige Palette für umweltfreundliche Projekte"
+      }
+    },
+    "features": {
+      "title": "Leistungsstarke Farbanalyse-Funktionen",
+      "subtitle": "Alles was Sie brauchen, um Farben aus Bildern zu extrahieren und zu bearbeiten",
+      "smartImageUpload": {
+        "title": "Intelligenter Bild-Upload",
+        "description": "Ziehen Sie ein Bild per Drag & Drop oder klicken Sie zum Durchsuchen. Unterstützt JPG, PNG, WebP und GIF-Formate bis zu 10MB."
+      },
+      "aiColorExtraction": {
+        "title": "KI-Farbextraktion",
+        "description": "Fortschrittliche KI-Algorithmen erkennen und extrahieren automatisch die auffälligsten Farben aus Ihren Bildern."
+      },
+      "manualColorPicker": {
+        "title": "Manuelle Farbauswahl",
+        "description": "Klicken Sie überall auf Ihr Bild, um spezifische Farben mit pixelgenauer Präzision manuell auszuwählen."
+      },
+      "colorPaletteManagement": {
+        "title": "Farbpaletten-Management",
+        "description": "Organisieren Sie Ihre Farben in benutzerdefinierten Paletten mit Drag & Drop-Neuordnung und einfacher Entfernung."
+      },
+      "multipleExportFormats": {
+        "title": "Mehrere Export-Formate",
+        "description": "Exportieren Sie Ihre Farbpaletten in verschiedenen Formaten: HEX, RGB, HSL, CSS, Adobe ASE und Sketch."
+      },
+      "realtimeAnalysis": {
+        "title": "Echtzeit-Analyse",
+        "description": "Sehen Sie sofortige Ergebnisse beim Hochladen und Interagieren mit Ihren Bildern. Kein Warten, nur sofortige Farbeinblicke."
+      }
+    },
+    "howItWorks": {
+      "title": "Einfach, Schnell, Professionell",
+      "subtitle": "Drei einfache Schritte, um perfekte Farben aus jedem Bild zu extrahieren",
+      "uploadImage": {
+        "title": "1. Laden Sie Ihr Bild hoch",
+        "description": "Ziehen Sie ein Bild per Drag & Drop oder klicken Sie zum Durchsuchen. Wir unterstützen alle gängigen Bildformate."
+      },
+      "analyzePickColors": {
+        "title": "2. Analysieren & Farben auswählen",
+        "description": "Unsere KI extrahiert automatisch Hauptfarben, oder wählen Sie manuell spezifische Farben durch Klicken auf das Bild."
+      },
+      "exportPalette": {
+        "title": "3. Exportieren Sie Ihre Palette",
+        "description": "Laden Sie Ihre Farbpalette in mehreren Formaten für die Verwendung in Design-Software, Websites oder Apps herunter."
+      }
+    },
+    "header": {
+      "title": "Vertraut von kreativen Profis",
+      "subtitle": "Schließen Sie sich Tausenden von Designern, Entwicklern und kreativen Profis an, die renk kodu bulma nutzen, um perfekte Farbpaletten aus jedem Bild zu entdecken.",
+      "startFreeAnalysis": "Kostenlose Analyse starten",
+      "viewExamples": "Beispiele ansehen",
+      "exploreFeatures": "Funktionen erkunden",
+      "stats": {
+        "imagesAnalyzed": "Analysierte Bilder",
+        "activeUsers": "Aktive Benutzer",
+        "colorPalettesCreated": "Erstellte Farbpaletten",
+        "accuracyRate": "Genauigkeitsrate"
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihre kreative Reise zu beginnen?",
+      "subtitle": "Schließen Sie sich Hunderttausenden von Benutzern in der kreativen Community an",
+      "getStartedForFree": "Kostenlos loslegen",
+      "learnMore": "Mehr erfahren"
+    },
+    "footer": {
+      "description": "renk kodu bulma macht Bildfarbanalyse einfach und effizient. Unsere KI-Technologie hilft Designern und Entwicklern, perfekte Farbkombinationen aus jedem Bild zu entdecken.",
+      "brandName": "renk kodu bulma",
+      "solutions": {
+        "title": "Kernfunktionen",
+        "colorAnalysis": "KI-Farbanalyse",
+        "colorPicker": "Farbauswahl",
+        "paletteGeneration": "Palettengenerierung",
+        "exportTools": "Export-Tools"
+      },
+      "support": {
+        "title": "Support",
+        "documentation": "Dokumentation",
+        "tutorials": "Tutorials",
+        "community": "Community",
+        "contact": "Kontakt"
+      },
+      "company": {
+        "title": "Unternehmen",
+        "about": "Über uns",
+        "blog": "Blog",
+        "careers": "Karriere",
+        "news": "Neuigkeiten"
+      },
+      "legal": {
+        "title": "Rechtliches",
+        "privacy": "Datenschutz",
+        "terms": "Nutzungsbedingungen",
+        "cookies": "Cookie-Richtlinie"
+      },
+      "copyright": "© 2024 renk kodu bulma, Inc. Alle Rechte vorbehalten."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bei renk kodu bulma anmelden",
+      "subtitle": "Setzen Sie Ihre Farb-Entdeckungsreise fort",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "your@example.com",
+      "password": "Passwort",
+      "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
+      "rememberMe": "Angemeldet bleiben",
+      "forgotPassword": "Passwort vergessen?",
+      "loginButton": "Anmelden",
+      "orLoginWith": "Oder anmelden mit",
+      "github": "GitHub",
+      "google": "Google",
+      "noAccount": "Haben Sie kein Konto?",
+      "registerLink": "Jetzt registrieren"
+    },
+    "register": {
+      "title": "Bei renk kodu bulma registrieren",
+      "subtitle": "Beginnen Sie Ihre Farb-Entdeckungsreise",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "your@example.com",
+      "username": "Benutzername",
+      "usernamePlaceholder": "Geben Sie Ihren Benutzernamen ein",
+      "password": "Passwort",
+      "passwordPlaceholder": "Geben Sie Ihr Passwort ein",
+      "confirmPassword": "Passwort bestätigen",
+      "confirmPasswordPlaceholder": "Geben Sie Ihr Passwort erneut ein",
+      "displayName": "Anzeigename",
+      "displayNamePlaceholder": "Geben Sie Anzeigename ein (optional)",
+      "agreeTerms": "Ich stimme zu",
+      "termsOfService": "Nutzungsbedingungen",
+      "and": "und",
+      "privacyPolicy": "Datenschutzrichtlinie",
+      "registerButton": "Registrieren",
+      "orRegisterWith": "Oder registrieren mit",
+      "github": "GitHub",
+      "google": "Google",
+      "hasAccount": "Haben Sie bereits ein Konto?",
+      "loginLink": "Jetzt anmelden"
+    },
+    "messages": {
+      "loginSuccess": "Anmeldung erfolgreich!",
+      "loginFailed": "Anmeldung fehlgeschlagen, bitte überprüfen Sie E-Mail und Passwort",
+      "registerSuccess": "Registrierung erfolgreich!",
+      "registerFailed": "Registrierung fehlgeschlagen, bitte versuchen Sie es erneut",
+      "logoutSuccess": "Erfolgreich abgemeldet",
+      "emailRequired": "Bitte geben Sie Ihre E-Mail-Adresse ein",
+      "passwordRequired": "Bitte geben Sie Ihr Passwort ein",
+      "usernameRequired": "Bitte geben Sie Ihren Benutzernamen ein",
+      "passwordMismatch": "Passwörter stimmen nicht überein",
+      "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "passwordTooShort": "Passwort muss mindestens 6 Zeichen lang sein",
+      "usernameTooShort": "Benutzername muss mindestens 3 Zeichen lang sein",
+      "usernameTooLong": "Benutzername darf nicht länger als 30 Zeichen sein",
+      "usernameInvalidChars": "Benutzername darf nur Buchstaben, Zahlen, Unterstriche und Bindestriche enthalten",
+      "passwordWeakStrength": "Passwort-Stärke unzureichend",
+      "confirmPasswordRequired": "Bitte bestätigen Sie Ihr Passwort",
+      "agreeToTermsRequired": "Bitte stimmen Sie den Nutzungsbedingungen zu"
+    },
+    "forgotPassword": {
+      "title": "Passwort zuruecksetzen",
+      "comingSoon": "Funktion in Entwicklung"
+    }
+  },
+  "colorAnalysis": {
+    "title": "Farben aus jedem Bild extrahieren",
+    "subtitle": "Farbpaletten aus Bildern extrahieren",
+    "description": "Laden Sie ein beliebiges Bild hoch, um sofort schöne Farbpaletten zu extrahieren",
+    "upload": {
+      "title": "Bild hochladen",
+      "dragText": "Bild hier hinziehen",
+      "clickText": "oder klicken Sie, um eine Datei auszuwählen",
+      "supportedFormats": "Unterstützt JPG, PNG, WebP, GIF-Formate",
+      "maxSize": "Maximale Dateigröße: 10MB",
+      "uploading": "Hochladen...",
+      "success": "Upload erfolgreich",
+      "error": "Upload fehlgeschlagen, bitte versuchen Sie es erneut",
+      "instructions": "Unterstützt Drag & Drop oder Klick zum Auswählen. Empfohlene Bildgröße unter 1920x1080 für optimale Verarbeitungsgeschwindigkeit.",
+      "reupload": "Erneut hochladen"
+    },
+    "extraction": {
+      "title": "Farbextraktion",
+      "analyzing": "Analysiere...",
+      "colorCount": "Farbanzahl",
+      "extractColors": "Farben extrahieren",
+      "autoExtracted": "Auto-Extrakt",
+      "manualPicked": "Manuell",
+      "dominantColors": "Dominante Farben",
+      "extracting": "Extrahiere",
+      "reExtract": "Neu extrahieren"
+    },
+    "picker": {
+      "title": "Bildvorschau",
+      "activate": "Farbe wählen",
+      "deactivate": "Auswahl beenden",
+      "active": "Auswahlmodus",
+      "inactive": "Farbwähler",
+      "zoomIn": "Vergrößern",
+      "zoomOut": "Verkleinern",
+      "reset": "Zurücksetzen",
+      "selectedColor": "Ausgewählte Farbe",
+      "clickToPickColor": "Klicken Sie auf das Bild, um eine Farbe zu wählen",
+      "colorPicked": "Farbe gewählt",
+      "position": "Position",
+      "zoomLevel": "Zoomstufe"
+    },
+    "palette": {
+      "title": "Finale Palette",
+      "colors": "Farben",
+      "empty": "Keine Farben",
+      "emptySlot": "Leerer Platz",
+      "addColor": "Farbe hinzufügen",
+      "removeColor": "Farbe entfernen",
+      "copyHex": "HEX kopieren",
+      "copyRgb": "RGB kopieren",
+      "copyAll": "Alle kopieren",
+      "reorder": "Ziehen zum Sortieren",
+      "export": "Palette exportieren",
+      "primary": "Primär",
+      "secondary": "Sekundär",
+      "neutral": "Neutral",
+      "manual": "Manuell",
+      "manualPicker": "Manuell wählen",
+      "noExtractedColors": "Keine auto-extrahierten Farben",
+      "clickImageToPick": "Klicken Sie auf das Bild, um Farben manuell zu wählen",
+      "maxColorsReached": "Maximallimit erreicht (12), bitte entfernen Sie einige Farben, um fortzufahren",
+      "clear": "Löschen",
+      "clearAll": "Alle löschen",
+      "copied": "Kopiert: {{value}}"
+    },
+    "export": {
+      "title": "Export",
+      "formats": "Formate",
+      "download": "Herunterladen",
+      "css": "CSS",
+      "json": "JSON",
+      "ase": "Adobe ASE",
+      "sketchPalette": "Sketch-Palette"
+    },
+    "status": {
+      "uploading": "Hochladen...",
+      "analyzing": "Analysiere...",
+      "extracting": "Extrahiere...",
+      "ready": "Bereit",
+      "error": "Fehler aufgetreten"
+    },
+    "tips": {
+      "title": "Tipps",
+      "upload": "Verwenden Sie hochwertige, kontrastreiche Bilder für beste Ergebnisse",
+      "picker": "Verwenden Sie die Zoom-Funktion für präzise Farbauswahl",
+      "palette": "Ziehen Sie Farben, um sie in Ihrer idealen Reihenfolge anzuordnen"
+    }
+  }
+} 

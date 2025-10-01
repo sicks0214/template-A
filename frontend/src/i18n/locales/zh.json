@@ -1,0 +1,665 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "contact": "联系",
+    "backToHome": "返回首页",
+    "settings": "设置",
+    "title": "renk kodu bulma",
+    "generator": "生成器",
+    "random": "随机",
+    "fromImage": "图像取色",
+    "mixer": "混合器",
+    "contrast": "对比度",
+    "login": "登录",
+    "register": "注册",
+    "workspace": "工作区",
+    "advanced": "高级功能"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "save": "保存",
+    "cancel": "取消",
+    "confirm": "确认",
+    "delete": "删除",
+    "edit": "编辑",
+    "copy": "复制",
+    "copied": "已复制",
+    "search": "搜索",
+    "back": "返回"
+  },
+  "colorcraft": {
+    "title": "renk kodu bulma",
+    "subtitle": "深色调色板",
+    "description": "探索优雅的深色调色板，使用丰富深邃的色调\n创建精致现代的设计方案！\n完全免费！",
+    "features": {
+      "aiPowered": {
+        "title": "AI 驱动",
+        "description": "先进算法创造惊艳的色彩组合"
+      },
+      "instantResults": {
+        "title": "即时结果",
+        "description": "几秒钟内生成美丽的调色板"
+      },
+      "multipleFormats": {
+        "title": "多种格式",
+        "description": "以各种格式导出，适用于任何项目"
+      }
+    },
+    "navigation": {
+      "backToGenerator": "返回生成器",
+      "color01": "深色调色板",
+      "color02": "颜色名称查找器",
+      "color03": "像素画转换器 | 图片转像素画 | 照片变像素风格",
+      "color04": "配色分析",
+      "color05": "高级工具"
+    },
+    "adjust": {
+      "title": "调整调色板",
+      "resetToOriginal": "重置为原始",
+      "save": "保存",
+      "saving": "保存中...",
+      "saved": "已保存！",
+      "error": "错误",
+      "brightness": "亮度",
+      "saturation": "饱和度",
+      "warmth": "暖度",
+      "dark": "暗",
+      "original": "原始",
+      "bright": "亮",
+      "gray": "灰",
+      "vivid": "鲜艳",
+      "cool": "冷",
+      "warm": "暖",
+      "modified": "已修改"
+    },
+    "export": {
+      "title": "导出调色板",
+      "landscape": "横向",
+      "portrait": "纵向",
+      "square": "方形",
+      "codeExport": "代码导出",
+      "cssClasses": "CSS 类",
+      "linearGradient": "线性渐变",
+      "radialGradient": "径向渐变"
+    },
+    "status": {
+      "paletteGeneratedSuccessfully": "✨ 调色板生成成功！",
+      "redirectingToResults": "正在跳转到结果..."
+    },
+    "examples": {
+      "title": "试试这些示例：",
+      "oceanSunset": "午夜海洋",
+      "forestMorning": "深邃森林",
+      "cityLights": "霓虹之夜",
+      "vintageCoffee": "浓郁咖啡",
+      "modernMinimalist": "精英黑调"
+    },
+    "placeholders": {
+      "imageAnalysis": {
+        "title": "颜色名称查找器",
+        "description": "识别并查找任意颜色的名称"
+      },
+      "brandColors": {
+        "title": "品牌配色",
+        "description": "为您的品牌创建专业配色方案"
+      },
+      "colorAnalysis": {
+        "title": "配色分析",
+        "description": "深度分析配色的和谐性和效果"
+      },
+      "advancedTools": {
+        "title": "高级工具",
+        "description": "专业的颜色管理和调色工具"
+      },
+      "comingSoon": "功能开发中，敬请期待..."
+    }
+  },
+  "page": {
+    "inputPlaceholder": "输入关键词、场景描述或抽象灵感来设定基调",
+    "generate": "生成调色板",
+    "paletteTitle": "调色板结果"
+  },
+  "home": {
+    "title": "WebApp Framework",
+    "description": "现代化Web应用开发框架，支持分层架构、插件耦合、多国语言"
+  },
+  "homepage": {
+    "navigation": {
+      "features": "功能特色",
+      "howItWorks": "使用说明",
+      "examples": "案例展示",
+      "about": "关于我们",
+      "startAnalyzing": "开始分析"
+    },
+    "hero": {
+      "announcement": "🎨 AI智能颜色分析工具现已上线。",
+      "learnMore": "了解更多",
+      "title": "发现任何图片中的完美色彩",
+      "subtitle": "上传任意图片，即时提取精美调色板。专业精度的颜色分析、拾取和导出，为您的设计项目提供完美配色。",
+      "startColorAnalysis": "开始颜色分析",
+      "howItWorks": "工作原理"
+    },
+    "examples": {
+      "title": "renk kodu bulma 实际应用",
+      "subtitle": "从精美图像中提取的真实调色板案例",
+      "sunsetLandscape": {
+        "title": "日落风景",
+        "description": "暖色调调色板，非常适合秋季设计"
+      },
+      "oceanWaves": {
+        "title": "海洋波浪",
+        "description": "冷色调调色板，适合健康品牌"
+      },
+      "forestNature": {
+        "title": "森林自然",
+        "description": "自然色调调色板，适合环保项目"
+      }
+    },
+    "features": {
+      "title": "强大的颜色分析功能",
+      "subtitle": "从任何图像中提取、分析和处理颜色所需的一切",
+      "smartImageUpload": {
+        "title": "智能图片上传",
+        "description": "拖拽上传任意图片或点击浏览。支持 JPG、PNG、WebP 和 GIF 格式，最大 10MB。"
+      },
+      "aiColorExtraction": {
+        "title": "AI颜色提取",
+        "description": "先进的AI算法自动检测并提取图像中最突出的颜色。"
+      },
+      "manualColorPicker": {
+        "title": "手动取色器",
+        "description": "点击图像任意位置，像素级精度手动拾取特定颜色。"
+      },
+      "colorPaletteManagement": {
+        "title": "调色板管理",
+        "description": "将颜色整理到自定义调色板中，支持拖拽排序和便捷删除。"
+      },
+      "multipleExportFormats": {
+        "title": "多种导出格式",
+        "description": "以各种格式导出调色板：HEX、RGB、HSL、CSS、Adobe ASE 和 Sketch。"
+      },
+      "realtimeAnalysis": {
+        "title": "实时分析",
+        "description": "上传和交互时即时查看结果。无需等待，立即获得颜色洞察。"
+      }
+    },
+    "howItWorks": {
+      "title": "工作原理",
+      "subtitle": "三个简单步骤从任何图像中提取完美颜色",
+      "uploadImage": {
+        "title": "1. 上传图片",
+        "description": "拖拽上传任意图片或点击浏览。我们支持所有主要图片格式。"
+      },
+      "analyzePickColors": {
+        "title": "2. 分析取色",
+        "description": "我们的AI自动提取主要颜色，或者通过点击图片手动选择特定颜色。"
+      },
+      "exportPalette": {
+        "title": "3. 导出调色板",
+        "description": "下载多种格式的调色板，用于设计软件、网站或应用程序。"
+      }
+    },
+    "header": {
+      "title": "备受创意专业人士信赖",
+      "subtitle": "加入数千名设计师、开发者和创意专业人士，他们使用 renk kodu bulma 从任何图像中发现完美的调色板。体验AI驱动的颜色分析的强大功能。",
+      "startFreeAnalysis": "开始免费分析",
+      "viewExamples": "查看案例",
+      "exploreFeatures": "探索功能",
+      "stats": {
+        "imagesAnalyzed": "图片分析数",
+        "activeUsers": "活跃用户",
+        "colorPalettesCreated": "调色板创建数",
+        "accuracyRate": "准确率"
+      }
+    },
+    "cta": {
+      "title": "准备发现惊艳的颜色了吗？",
+      "subtitle": "立即开始分析您的图片，几秒钟内创建美丽的调色板。",
+      "getStartedForFree": "免费开始使用",
+      "learnMore": "了解更多"
+    },
+    "footer": {
+      "description": "renk kodu bulma 让图像颜色分析变得简单高效。我们的AI技术帮助设计师和开发者从任何图片中发现完美的色彩搭配。",
+      "brandName": "renk kodu bulma",
+      "solutions": {
+        "title": "核心功能",
+        "colorAnalysis": "AI颜色分析",
+        "paletteExtraction": "调色板提取",
+        "aiTechnology": "智能技术",
+        "exportTools": "导出工具",
+        "designInsights": "设计洞察"
+      },
+      "support": {
+        "title": "帮助支持",
+        "contact": "联系我们",
+        "documentation": "使用文档",
+        "userGuide": "用户指南"
+      },
+      "company": {
+        "title": "公司信息",
+        "about": "关于我们",
+        "blog": "博客",
+        "careers": "招聘",
+        "press": "媒体报道"
+      },
+      "legal": {
+        "title": "法律条款",
+        "terms": "服务条款",
+        "privacy": "隐私政策",
+        "license": "使用许可"
+      },
+      "copyright": "© 2024 renk kodu bulma, Inc. 保留所有权利。"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "description": "WebApp Framework是一个现代化的Web应用开发框架"
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "联系表单和联系信息"
+  },
+  "footer": {
+    "description": "现代化的AI调色板生成工具，为设计师和开发者提供智能配色方案，支持文本描述生成和图片颜色分析。完全免费！",
+    "products": {
+      "title": "核心功能",
+      "framework": "AI调色板生成",
+      "components": "图片颜色分析",
+      "templates": "多格式导出",
+      "api": "实时预览"
+    },
+    "support": {
+      "title": "帮助与支持",
+      "guide": "使用指南",
+      "faq": "常见问题",
+      "contact": "联系我们",
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "disclaimer": "免责声明"
+    },
+    "copyright": "© 2025 renk kodu bulma. 保留所有权利."
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "联系 renk kodu bulma.App",
+    "description": "请填写下面的联系表单，我们将在24-48小时内回复您。",
+    "form": {
+      "email": "邮箱",
+      "name": "您的姓名",
+      "message": "您的信息",
+      "sendCopy": "向我发送回复副本",
+      "submit": "提交",
+      "clear": "清空表单",
+      "submitting": "提交中...",
+      "emailPlaceholder": "您的邮箱",
+      "namePlaceholder": "您的姓名",
+      "messagePlaceholder": "请详细描述您的问题、反馈或意见...",
+      "messageHelp": "包括详细信息：错误报告、功能请求、技术问题、一般反馈或商业咨询。"
+    },
+    "success": {
+      "title": "谢谢！",
+      "description": "您的消息已成功提交。我们将在24-48小时内回复您。",
+      "backButton": "返回 renk kodu bulma",
+      "sendAnother": "发送另一条消息"
+    },
+    "backButton": "返回 renk kodu bulma"
+  },
+  "colorAnalysis": {
+    "title": "从任何图片中提取颜色",
+    "subtitle": "识别并查找任意颜色的名称",
+    "description": "从任何来源发现精确的颜色名称和详细信息 - 上传图片、输入十六进制代码或直接选择颜色",
+    "upload": {
+      "title": "上传图片",
+      "dragText": "拖拽图片到此处",
+      "clickText": "或点击选择文件",
+      "supportedFormats": "支持 JPG、PNG、WebP、GIF 格式",
+      "maxSize": "最大文件大小：10MB",
+      "uploading": "上传中...",
+      "success": "上传成功",
+      "error": "上传失败，请重试",
+      "instructions": "支持拖拽上传、点击选择文件。建议图片尺寸不超过 1920x1080 以获得最佳处理速度。",
+      "reupload": "重新上传"
+    },
+    "extraction": {
+      "title": "颜色提取",
+      "analyzing": "分析中...",
+      "colorCount": "颜色数量",
+      "extractColors": "提取颜色",
+      "autoExtracted": "自动提取",
+      "manualPicked": "手动取色",
+      "dominantColors": "主导颜色",
+      "extracting": "提取中",
+      "reExtract": "重新提取",
+      "settings": {
+        "title": "分析设置",
+        "presets": "快速预设",
+        "preset": {
+          "balanced": "平衡",
+          "vibrant": "鲜艳",
+          "minimal": "简洁",
+          "detailed": "详细"
+        },
+        "basic": "基础设置",
+        "advanced": "高级设置",
+        "colorCount": "提取数量",
+        "algorithm": "提取算法",
+        "algorithm.kmeans": "K-means聚类",
+        "algorithm.medianCut": "中位切分",
+        "includeNeutral": "包含中性色",
+        "excludeSimilar": "排除相似颜色",
+        "sensitivity": "敏感度",
+        "sensitivityDesc": "控制相似颜色的识别精度",
+        "minPercentage": "最小占比",
+        "minPercentageDesc": "颜色在图片中的最小占比阈值",
+        "apply": "应用设置",
+        "tip": {
+          "title": "设置说明",
+          "description": "调整这些参数可以获得更精确的颜色提取结果"
+        }
+      }
+    },
+    "picker": {
+      "title": "图片预览",
+      "activate": "点击取色",
+      "deactivate": "退出取色",
+      "active": "取色模式",
+      "inactive": "取色器",
+      "zoomIn": "放大",
+      "zoomOut": "缩小",
+      "reset": "重置",
+      "selectedColor": "选中的颜色",
+      "clickToPickColor": "点击图片取色",
+      "colorPicked": "已取色",
+      "position": "位置",
+      "zoomLevel": "放大级别",
+      "crosshair": "十字光标",
+      "magnifier": "放大镜",
+      "hoverInstruction": "悬停查看放大镜，点击选择颜色"
+    },
+    "palette": {
+      "title": "最终调色板",
+      "colors": "色",
+      "empty": "暂无颜色",
+      "emptySlot": "空位",
+      "addColor": "添加颜色",
+      "removeColor": "移除颜色",
+      "copyHex": "复制 HEX",
+      "copyRgb": "复制 RGB",
+      "copyAll": "复制全部",
+      "reorder": "拖拽排序",
+      "export": "导出调色板",
+      "primary": "主色",
+      "secondary": "辅色",
+      "neutral": "中性色",
+      "manual": "手动",
+      "manualPicker": "手动取色",
+      "noExtractedColors": "暂无自动提取的颜色",
+      "clickImageToPick": "点击图片进行手动取色",
+      "maxColorsReached": "已达到最大数量（12个），请删除一些颜色后继续取色",
+      "maxColorsReachedShort": "已满",
+      "clear": "清空",
+      "clearAll": "清空全部",
+      "clearManualColors": "清空手动取色",
+      "clearConfirm": "确定要清空所有手动取色吗？此操作不可撤销。",
+      "copiedColors": "已复制 {{count}} 个颜色",
+      "selected": "已选择 {{count}} 个",
+      "copyError": "复制失败",
+      "copied": "已复制: {{value}}",
+      "emptyDescription": "上传图片并提取颜色，或手动点击图片添加颜色到调色板中。",
+      "deleteSelected": "删除选中的颜色",
+      "movingColor": "正在移动颜色..."
+    },
+    "actions": {
+      "analyze": "分析颜色",
+      "reset": "重新开始",
+      "save": "保存分析",
+      "export": "导出",
+      "copy": "复制",
+      "copied": "已复制",
+      "delete": "删除",
+      "edit": "编辑",
+      "addAllToPalette": "全部添加到调色板",
+      "resetConfirm": "确定要重新开始吗？这将清除当前上传的图片和所有分析结果。"
+    },
+    "status": {
+      "ready": "准备就绪",
+      "uploading": "上传中",
+      "analyzing": "分析中",
+      "complete": "分析完成",
+      "error": "发生错误",
+      "noImage": "请先上传图片"
+    },
+    "tips": {
+      "title": "使用提示",
+      "uploadImage": "上传图片自动提取主要颜色",
+      "clickPicker": "开启\"点击取色\"手动选择颜色",
+      "dragReorder": "拖拽调色板中的颜色进行排序",
+      "exportFormats": "支持多种格式导出"
+    },
+    "export": {
+      "formats": {
+        "hex": {
+          "label": "HEX 颜色代码",
+          "description": "十六进制颜色值"
+        },
+        "rgb": {
+          "label": "RGB 颜色代码",
+          "description": "RGB 颜色值"
+        },
+        "hsl": {
+          "label": "HSL 颜色代码",
+          "description": "HSL 颜色值"
+        },
+        "css": {
+          "label": "CSS 变量",
+          "description": "CSS 自定义属性"
+        },
+        "json": {
+          "label": "JSON 数据",
+          "description": "结构化数据格式"
+        },
+        "image": {
+          "label": "PNG 图像",
+          "description": "颜色样本条"
+        }
+      },
+      "emptyState": "添加颜色后即可导出调色板",
+      "export": "导出",
+      "exporting": "导出中...",
+      "previewContent": "预览内容",
+      "showPreview": "显示预览",
+      "hidePreview": "隐藏预览",
+      "imagePreview": "图像预览",
+      "paletteTitle": "调色板",
+      "colorName": "颜色",
+      "canvasError": "无法创建Canvas上下文",
+      "imageGenerationError": "无法生成图像",
+      "noColorsError": "没有颜色可导出",
+      "imagePreviewUnavailable": "图像预览不可用，请直接导出查看",
+      "exportError": "导出失败"
+    }
+  },
+  "feedback": {
+    "buttonTitle": "反馈建议",
+    "title": "反馈建议",
+    "contentLabel": "反馈内容",
+    "contentPlaceholder": "请描述您的问题、建议或想法...",
+    "emailLabel": "邮箱 (可选)",
+    "emailPlaceholder": "您的邮箱地址",
+    "submitButton": "提交反馈",
+    "submitting": "提交中...",
+    "contentTooShort": "反馈内容至少需要5个字符",
+    "submitSuccess": "感谢您的反馈！我们会认真处理您的建议。",
+    "submitError": "反馈提交失败，请稍后重试",
+    "successTitle": "反馈提交成功！",
+    "successMessage": "感谢您的宝贵建议，我们会认真处理。"
+  },
+  "pixelArt": {
+    "title": "像素画转换器 | 图片转像素画 | 照片变像素风格",
+    "subtitle": "智能图片像素化与风格转换",
+    "uploadArea": "上传区",
+    "uploadButton": "上传图片按钮",
+    "dragDropArea": "拖拽上传区域",
+    "dragDropHint": "拖拽上传区域",
+    "supportedFormats": "JPG, PNG, GIF",
+    "maxFileSize": "最大 10MB",
+    "modes": {
+      "title": "像素处理模式",
+      "normal": "普通像素",
+      "original": "原始像素", 
+      "isolated": "隔离像素",
+      "enhanced": "增强像素"
+    },
+    "parameters": {
+      "pixelSize": "像素大小",
+      "colorCount": "颜色数量",
+      "edgeDensity": "边缘密度",
+      "sizePresets": {
+        "extraSmall": "超小",
+        "small": "小的",
+        "medium": "中等",
+        "large": "大的", 
+        "extraLarge": "特大"
+      },
+      "edgePresets": {
+        "minimal": "极小",
+        "low": "小",
+        "medium": "中",
+        "high": "大", 
+        "maximum": "极大"
+      }
+    },
+    "palette": {
+      "title": "调色板",
+      "retro": "复古",
+      "neon": "霓虹",
+      "blackWhite": "黑白"
+    },
+    "filters": {
+      "title": "滤镜",
+      "none": "无",
+      "retro": "怀旧",
+      "neon": "霓虹", 
+      "blackWhite": "黑白"
+    },
+    "preview": {
+      "title": "预览区",
+      "originalImage": "原图",
+      "pixelizedImage": "像素化后的图",
+      "demoEffect": "演示效果 - 上传您的图片开始创作！",
+      "realtimePreview": "实时预览",
+      "demoImage": "演示图片",
+      "demoResult": "演示效果",
+      "demoMode": "演示模式 - 试试上传您的图片！",
+      "generating": "生成中...",
+      "previewPlaceholder": "像素画预览",
+      "adjustParams": "调整参数查看不同效果",
+      "generatePixelArt": "生成像素画"
+    },
+    "download": {
+      "png": "下载PNG",
+      "jpg": "下载JPG"
+    },
+    "status": {
+      "processing": "处理中...",
+      "failed": "处理失败",
+      "completed": "转换完成",
+      "selectFileFirst": "请先选择图片文件",
+      "formatNotSupported": "只支持PNG和JPG格式",
+      "fileTooLarge": "文件大小不能超过10MB"
+    }
+  },
+  "test": {
+    "title": "renk kodu bulma 测试页面",
+    "frontend": {
+      "title": "前端服务正常",
+      "description": "如果您能看到这个页面，说明前端服务器已经正常启动。"
+    },
+    "system": {
+      "title": "系统信息",
+      "frontendPort": "前端端口: 5173",
+      "backendPort": "后端端口: 3001",
+      "currentTime": "当前时间",
+      "browser": "浏览器"
+    },
+    "nextSteps": {
+      "title": "下一步",
+      "description": "基础页面正常后，您可以访问：",
+      "home": "首页",
+      "app": "ColorCraft应用",
+      "authTest": "认证系统测试"
+    },
+    "refresh": "刷新页面"
+  },
+  "auth": {
+    "login": {
+      "title": "登录到renk kodu bulma",
+      "subtitle": "继续您的颜色探索之旅",
+      "email": "邮箱地址",
+      "emailPlaceholder": "your@example.com",
+      "password": "密码",
+      "passwordPlaceholder": "请输入密码",
+      "rememberMe": "记住我",
+      "forgotPassword": "忘记密码？",
+      "loginButton": "登录",
+      "orLoginWith": "或使用第三方登录",
+      "github": "GitHub",
+      "google": "Google",
+      "noAccount": "还没有账号？",
+      "registerLink": "立即注册"
+    },
+    "register": {
+      "title": "注册renk kodu bulma",
+      "subtitle": "开始您的颜色探索之旅",
+      "email": "邮箱地址",
+      "emailPlaceholder": "your@example.com",
+      "username": "用户名",
+      "usernamePlaceholder": "请输入用户名",
+      "password": "密码",
+      "passwordPlaceholder": "请输入密码",
+      "confirmPassword": "确认密码",
+      "confirmPasswordPlaceholder": "请再次输入密码",
+      "displayName": "显示名称",
+      "displayNamePlaceholder": "请输入显示名称（可选）",
+      "agreeTerms": "我同意",
+      "termsOfService": "服务条款",
+      "and": "和",
+      "privacyPolicy": "隐私政策",
+      "registerButton": "注册",
+      "orRegisterWith": "或使用第三方注册",
+      "github": "GitHub",
+      "google": "Google",
+      "hasAccount": "已有账号？",
+      "loginLink": "立即登录"
+    },
+    "user": {
+      "profile": "个人资料",
+      "settings": "设置",
+      "myPalettes": "我的调色板",
+      "favorites": "收藏夹",
+      "history": "历史记录",
+      "subscription": "订阅状态",
+      "logout": "退出登录",
+      "free": "免费用户",
+      "premium": "高级用户",
+      "vip": "VIP用户"
+    },
+    "messages": {
+      "loginSuccess": "登录成功！",
+      "loginFailed": "登录失败，请检查邮箱和密码",
+      "registerSuccess": "注册成功！",
+      "registerFailed": "注册失败，请重试",
+      "logoutSuccess": "已成功退出登录",
+      "emailRequired": "请输入邮箱地址",
+      "passwordRequired": "请输入密码",
+      "usernameRequired": "请输入用户名",
+      "passwordMismatch": "两次输入的密码不一致",
+      "invalidEmail": "请输入有效的邮箱地址",
+      "passwordTooShort": "密码至少需要6个字符",
+      "usernameTooShort": "用户名至少需要3个字符"
+    }
+  }
+}

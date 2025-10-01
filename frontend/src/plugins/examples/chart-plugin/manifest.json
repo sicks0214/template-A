@@ -1,0 +1,110 @@
+{
+  "id": "chart-plugin",
+  "name": "Chart Plugin",
+  "version": "1.0.0",
+  "description": "A powerful charting plugin with multiple chart types and interactive features",
+  "author": "Chart Team",
+  "category": "data-visualization",
+  "tags": ["chart", "visualization", "data", "analytics"],
+  "license": "MIT",
+  "dependencies": [],
+  "permissions": ["data-read", "ui-write"],
+  "homepage": "https://github.com/chart-plugin",
+  "repository": "https://github.com/chart-plugin/chart-plugin",
+  "icon": "/plugins/chart-plugin/icon.svg",
+  "screenshots": [
+    "/plugins/chart-plugin/screenshot1.png",
+    "/plugins/chart-plugin/screenshot2.png"
+  ],
+  "readme": "# Chart Plugin\n\nA powerful charting plugin with multiple chart types and interactive features.",
+  "changelog": "## 1.0.0\n- Initial release\n- Support for line, bar, pie charts\n- Interactive features",
+  "compatibility": {
+    "framework": "react",
+    "minVersion": "18.0.0",
+    "maxVersion": "19.0.0"
+  },
+  "frontend": {
+    "routes": [
+      {
+        "path": "/charts",
+        "component": "ChartPage",
+        "exact": true,
+        "protected": false
+      },
+      {
+        "path": "/charts/:id",
+        "component": "ChartDetailPage",
+        "exact": true,
+        "protected": false
+      }
+    ],
+    "components": {
+      "ChartPage": "components/ChartPage.tsx",
+      "ChartDetailPage": "components/ChartDetailPage.tsx",
+      "LineChart": "components/charts/LineChart.tsx",
+      "BarChart": "components/charts/BarChart.tsx",
+      "PieChart": "components/charts/PieChart.tsx",
+      "ChartToolbar": "components/ChartToolbar.tsx",
+      "ChartConfig": "components/ChartConfig.tsx"
+    },
+    "hooks": {
+      "useChartData": "hooks/useChartData.ts",
+      "useChartConfig": "hooks/useChartConfig.ts",
+      "useChartExport": "hooks/useChartExport.ts"
+    },
+    "services": {
+      "chartService": "services/chartService.ts",
+      "dataService": "services/dataService.ts",
+      "exportService": "services/exportService.ts"
+    },
+    "stores": {
+      "chartStore": "stores/chartStore.ts",
+      "dataStore": "stores/dataStore.ts"
+    }
+  },
+  "backend": {
+    "routes": [
+      {
+        "method": "GET",
+        "path": "/api/charts",
+        "handler": "ChartController.getAllCharts",
+        "middleware": ["auth"]
+      },
+      {
+        "method": "POST",
+        "path": "/api/charts",
+        "handler": "ChartController.createChart",
+        "middleware": ["auth", "validation"]
+      },
+      {
+        "method": "GET",
+        "path": "/api/charts/:id",
+        "handler": "ChartController.getChart",
+        "middleware": ["auth"]
+      },
+      {
+        "method": "PUT",
+        "path": "/api/charts/:id",
+        "handler": "ChartController.updateChart",
+        "middleware": ["auth", "validation"]
+      },
+      {
+        "method": "DELETE",
+        "path": "/api/charts/:id",
+        "handler": "ChartController.deleteChart",
+        "middleware": ["auth"]
+      }
+    ],
+    "controllers": {
+      "ChartController": "controllers/ChartController.ts"
+    },
+    "services": {
+      "ChartService": "services/ChartService.ts",
+      "DataService": "services/DataService.ts"
+    },
+    "models": {
+      "Chart": "models/Chart.ts",
+      "ChartData": "models/ChartData.ts"
+    }
+  }
+} 

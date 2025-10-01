@@ -1,0 +1,74 @@
+version: '3.8'
+
+services:
+  # ColorMagic应用容器 - VPS生产环境
+  site4:
+    build:
+      context: ../../
+      dockerfile: docker/vps-production/Dockerfile
+    container_name: site4
+    restart: unless-stopped
+    environment:
+      # 应用配置
+      - NODE_ENV=production
+      - PORT=3000
+      - TZ=America/New_York
+      
+      # 数据库配置（连接VPS总系统PostgreSQL）
+      - USE_DATABASE=true
+      - DB_HOST=postgres_master
+      - DB_USER=site4_user
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=postgres
+      - DB_PORT=5432
+      
+      # API配置
+      - API_BASE_URL=${API_BASE_URL}
+      - FRONTEND_URL=${FRONTEND_URL}
+      - ALLOWED_ORIGINS=${ALLOWED_ORIGINS}
+      
+      # 文件上传配置
+      - MAX_FILE_SIZE=10485760
+      - ALLOWED_FILE_TYPES=image/jpeg,image/jpg,image/png,image/webp,image/gif,image/bmp
+      
+      # 缓存配置
+      - ENABLE_REDIS=false
+      
+      # 安全配置
+      - RATE_LIMIT_WINDOW=900000
+      - RATE_LIMIT_MAX=100
+      
+      # AI服务已移除，专注于核心颜色分析功能
+      
+    networks:
+      - webproxy      # 对外访问网络
+      - shared_net    # 数据库通信网络
+    volumes:
+      - app_uploads:/app/uploads
+      - app_logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    labels:
+      # Nginx Proxy Manager标签
+      - "traefik.enable=false"
+      # 自定义标签用于识别
+      - "app=colormagic"
+      - "version=2.0"
+      - "stage=production"
+      - "site=site4"
+
+volumes:
+  app_uploads:
+    driver: local
+  app_logs:
+    driver: local
+
+networks:
+  webproxy:
+    external: true    # 使用外部网络（NPM代理网络）
+  shared_net:
+    external: true    # 使用外部网络（数据库共享网络）

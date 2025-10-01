@@ -1,0 +1,284 @@
+{
+  "homepage": {
+    "navigation": {
+      "features": "Özellikler",
+      "howItWorks": "Nasıl Çalışır",
+      "examples": "Örnekler",
+      "about": "Hakkımızda",
+      "startAnalyzing": "Analize Başla"
+    },
+    "hero": {
+      "announcement": "🎨 AI destekli renk analizi aracı şimdi mevcut.",
+      "learnMore": "Daha Fazla Öğren",
+      "title": "Herhangi Bir Görselde Mükemmel Renkleri Keşfedin",
+      "subtitle": "Herhangi bir görsel yükleyin ve anında güzel renk paletleri çıkarın. Tasarım projeleriniz için profesyonel hassasiyetle renkleri analiz edin, seçin ve dışa aktarın.",
+      "startColorAnalysis": "Renk Analizine Başla",
+      "howItWorks": "Nasıl Çalışır"
+    },
+    "examples": {
+      "title": "renk kodu bulma'yı Çalışırken Görün",
+      "subtitle": "Güzel görsellerden çıkarılan gerçek renk paleti örnekleri",
+      "sunsetLandscape": {
+        "title": "Gün Batımı Manzarası",
+        "description": "Sonbahar tasarımları için mükemmel sıcak, canlı palet"
+      },
+      "oceanWaves": {
+        "title": "Okyanus Dalgaları",
+        "description": "Wellness markaları için ideal serin, sakinleştirici palet"
+      },
+      "forestNature": {
+        "title": "Orman Doğası",
+        "description": "Çevre dostu projeler için doğal, toprak rengi palet"
+      }
+    },
+    "features": {
+      "title": "Güçlü Renk Analizi Özellikleri",
+      "subtitle": "Görsellerden renk çıkarmak ve bunlarla çalışmak için ihtiyacınız olan her şey",
+      "smartImageUpload": {
+        "title": "Akıllı Görsel Yükleme",
+        "description": "Herhangi bir görseli sürükleyip bırakın veya göz atmak için tıklayın. 10MB'a kadar JPG, PNG, WebP ve GIF formatlarını destekler."
+      },
+      "aiColorExtraction": {
+        "title": "AI Renk Çıkarma",
+        "description": "Gelişmiş AI algoritmaları, görsellerinizdeki en belirgin renkleri otomatik olarak tespit eder ve çıkarır."
+      },
+      "manualColorPicker": {
+        "title": "Manuel Renk Seçici",
+        "description": "Piksel mükemmelliğinde hassasiyetle belirli renkleri manuel olarak seçmek için görselinizin herhangi bir yerine tıklayın."
+      },
+      "colorPaletteManagement": {
+        "title": "Renk Paleti Yönetimi",
+        "description": "Renklerinizi sürükle-bırak yeniden sıralama ve kolay kaldırma ile özel paletlerde düzenleyin."
+      },
+      "multipleExportFormats": {
+        "title": "Çoklu Dışa Aktarma Formatları",
+        "description": "Renk paletlerinizi çeşitli formatlarda dışa aktarın: HEX, RGB, HSL, CSS, Adobe ASE ve Sketch."
+      },
+      "realtimeAnalysis": {
+        "title": "Gerçek Zamanlı Analiz",
+        "description": "Görsellerinizi yüklerken ve etkileşime geçerken anında sonuçlar görün. Bekleme yok, sadece anlık renk içgörüleri."
+      }
+    },
+    "howItWorks": {
+      "title": "Basit, Hızlı, Profesyonel",
+      "subtitle": "Herhangi bir görselden mükemmel renkleri çıkarmak için üç basit adım",
+      "uploadImage": {
+        "title": "1. Görselinizi Yükleyin",
+        "description": "Herhangi bir görseli sürükleyip bırakın veya göz atmak için tıklayın. Tüm ana görsel formatlarını destekliyoruz."
+      },
+      "analyzePickColors": {
+        "title": "2. Analiz Edin ve Renkleri Seçin",
+        "description": "AI'ımız otomatik olarak ana renkleri çıkarır veya görsele tıklayarak belirli renkleri manuel olarak seçin."
+      },
+      "exportPalette": {
+        "title": "3. Paletinizi Dışa Aktarın",
+        "description": "Tasarım yazılımları, web siteleri veya uygulamalarda kullanmak üzere renk paletinizi birden fazla formatta indirin."
+      }
+    },
+    "header": {
+      "title": "Yaratıcı Profesyoneller Tarafından Güvenilen",
+      "subtitle": "Herhangi bir görselden mükemmel renk paletleri keşfetmek için renk kodu bulma kullanan binlerce tasarımcı, geliştirici ve yaratıcı profesyonele katılın.",
+      "startFreeAnalysis": "Ücretsiz Analize Başla",
+      "viewExamples": "Örnekleri Görüntüle",
+      "exploreFeatures": "Özellikleri Keşfet",
+      "stats": {
+        "imagesAnalyzed": "Analiz Edilen Görseller",
+        "activeUsers": "Aktif Kullanıcılar",
+        "colorPalettesCreated": "Oluşturulan Renk Paletleri",
+        "accuracyRate": "Doğruluk Oranı"
+      }
+    },
+    "cta": {
+      "title": "Yaratıcı Yolculuğunuza Başlamaya Hazır mısınız?",
+      "subtitle": "Yaratıcı topluluktaki yüz binlerce kullanıcıya katılın",
+      "getStartedForFree": "Ücretsiz Başlayın",
+      "learnMore": "Daha Fazla Öğren"
+    },
+    "footer": {
+      "description": "renk kodu bulma görsel renk analizini basit ve verimli hale getirir. AI teknolojimiz tasarımcıların ve geliştiricilerin herhangi bir görselden mükemmel renk kombinasyonları keşfetmesine yardımcı olur.",
+      "brandName": "renk kodu bulma",
+      "solutions": {
+        "title": "Temel Özellikler",
+        "colorAnalysis": "AI Renk Analizi",
+        "colorPicker": "Renk Seçici",
+        "paletteGeneration": "Palet Oluşturma",
+        "exportTools": "Dışa Aktarma Araçları"
+      },
+      "support": {
+        "title": "Destek",
+        "documentation": "Belgeler",
+        "tutorials": "Eğitimler",
+        "community": "Topluluk",
+        "contact": "İletişim"
+      },
+      "company": {
+        "title": "Şirket",
+        "about": "Hakkımızda",
+        "blog": "Blog",
+        "careers": "Kariyer",
+        "news": "Haberler"
+      },
+      "legal": {
+        "title": "Yasal",
+        "privacy": "Gizlilik",
+        "terms": "Kullanım Şartları",
+        "cookies": "Çerez Politikası"
+      },
+      "copyright": "© 2024 renk kodu bulma, Inc. Tüm hakları saklıdır."
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "renk kodu bulma'ya Giriş Yap",
+      "subtitle": "Renk keşif yolculuğunuza devam edin",
+      "email": "E-posta Adresi",
+      "emailPlaceholder": "your@example.com",
+      "password": "Şifre",
+      "passwordPlaceholder": "Şifrenizi girin",
+      "rememberMe": "Beni hatırla",
+      "forgotPassword": "Şifrenizi mi unuttunuz?",
+      "loginButton": "Giriş Yap",
+      "orLoginWith": "Veya şununla giriş yap",
+      "github": "GitHub",
+      "google": "Google",
+      "noAccount": "Hesabınız yok mu?",
+      "registerLink": "Şimdi kayıt olun"
+    },
+    "register": {
+      "title": "renk kodu bulma'ya Kayıt Ol",
+      "subtitle": "Renk keşif yolculuğunuza başlayın",
+      "email": "E-posta Adresi",
+      "emailPlaceholder": "your@example.com",
+      "username": "Kullanıcı Adı",
+      "usernamePlaceholder": "Kullanıcı adınızı girin",
+      "password": "Şifre",
+      "passwordPlaceholder": "Şifrenizi girin",
+      "confirmPassword": "Şifre Onayı",
+      "confirmPasswordPlaceholder": "Şifrenizi tekrar girin",
+      "displayName": "Görünen Ad",
+      "displayNamePlaceholder": "Görünen adı girin (isteğe bağlı)",
+      "agreeTerms": "Şunları kabul ediyorum",
+      "termsOfService": "Hizmet Şartları",
+      "and": "ve",
+      "privacyPolicy": "Gizlilik Politikası",
+      "registerButton": "Kayıt Ol",
+      "orRegisterWith": "Veya şununla kayıt ol",
+      "github": "GitHub",
+      "google": "Google",
+      "hasAccount": "Zaten hesabınız var mı?",
+      "loginLink": "Şimdi giriş yap"
+    },
+    "messages": {
+      "loginSuccess": "Giriş başarılı!",
+      "loginFailed": "Giriş başarısız, e-posta ve şifrenizi kontrol edin",
+      "registerSuccess": "Kayıt başarılı!",
+      "registerFailed": "Kayıt başarısız, tekrar deneyin",
+      "logoutSuccess": "Başarıyla çıkış yapıldı",
+      "emailRequired": "Lütfen e-posta adresinizi girin",
+      "passwordRequired": "Lütfen şifrenizi girin",
+      "usernameRequired": "Lütfen kullanıcı adınızı girin",
+      "passwordMismatch": "Şifreler eşleşmiyor",
+      "invalidEmail": "Lütfen geçerli bir e-posta adresi girin",
+      "passwordTooShort": "Şifre en az 6 karakter olmalıdır",
+      "usernameTooShort": "Kullanıcı adı en az 3 karakter olmalıdır",
+      "usernameTooLong": "Kullanıcı adı 30 karakterden fazla olamaz",
+      "usernameInvalidChars": "Kullanıcı adı sadece harf, rakam, alt çizgi ve tire içerebilir",
+      "passwordWeakStrength": "Şifre gücü yetersiz",
+      "confirmPasswordRequired": "Lütfen şifrenizi onaylayın",
+      "agreeToTermsRequired": "Lütfen hizmet şartlarını kabul edin"
+    },
+    "forgotPassword": {
+      "title": "Şifre Sıfırlama",
+      "comingSoon": "Özellik geliştiriliyor"
+    }
+  },
+  "colorAnalysis": {
+    "title": "Herhangi bir görselden renk çıkarın",
+    "subtitle": "Görsellerden renk paletleri çıkarın",
+    "description": "Güzel renk paletlerini anında çıkarmak için herhangi bir görsel yükleyin",
+    "upload": {
+      "title": "Görsel Yükle",
+      "dragText": "Görseli buraya sürükleyin",
+      "clickText": "veya dosya seçmek için tıklayın",
+      "supportedFormats": "JPG, PNG, WebP, GIF formatlarını destekler",
+      "maxSize": "Maksimum dosya boyutu: 10MB",
+      "uploading": "Yükleniyor...",
+      "success": "Yükleme başarılı",
+      "error": "Yükleme başarısız, tekrar deneyin",
+      "instructions": "Sürükle & bırak veya seçmek için tıklama destekler. Optimum işleme hızı için 1920x1080 altında görsel boyutu önerilir.",
+      "reupload": "Tekrar yükle"
+    },
+    "extraction": {
+      "title": "Renk Çıkarma",
+      "analyzing": "Analiz ediliyor...",
+      "colorCount": "Renk sayısı",
+      "extractColors": "Renkleri Çıkar",
+      "autoExtracted": "Otomatik Çıkar",
+      "manualPicked": "Manuel Seç",
+      "dominantColors": "Baskın Renkler",
+      "extracting": "Çıkarılıyor",
+      "reExtract": "Tekrar çıkar"
+    },
+    "picker": {
+      "title": "Görsel Önizleme",
+      "activate": "Renk Seç",
+      "deactivate": "Seçimi Bitir",
+      "active": "Seçim Modu",
+      "inactive": "Renk Seçici",
+      "zoomIn": "Yakınlaştır",
+      "zoomOut": "Uzaklaştır",
+      "reset": "Sıfırla",
+      "selectedColor": "Seçilen Renk",
+      "clickToPickColor": "Renk seçmek için görsele tıklayın",
+      "colorPicked": "Renk seçildi",
+      "position": "Pozisyon",
+      "zoomLevel": "Yakınlaştırma Seviyesi"
+    },
+    "palette": {
+      "title": "Final Palet",
+      "colors": "renkler",
+      "empty": "Renk yok",
+      "emptySlot": "Boş alan",
+      "addColor": "Renk Ekle",
+      "removeColor": "Renk Kaldır",
+      "copyHex": "HEX Kopyala",
+      "copyRgb": "RGB Kopyala",
+      "copyAll": "Tümünü Kopyala",
+      "reorder": "Yeniden sıralamak için sürükleyin",
+      "export": "Paleti Dışa Aktar",
+      "primary": "Birincil",
+      "secondary": "İkincil",
+      "neutral": "Nötr",
+      "manual": "Manuel",
+      "manualPicker": "Manuel Seç",
+      "noExtractedColors": "Otomatik çıkarılan renk yok",
+      "clickImageToPick": "Renkleri manuel olarak seçmek için görsele tıklayın",
+      "maxColorsReached": "Maksimum limite ulaşıldı (12), devam etmek için bazı renkleri kaldırın",
+      "clear": "Temizle",
+      "clearAll": "Tümünü Temizle",
+      "copied": "Kopyalandı: {{value}}"
+    },
+    "export": {
+      "title": "Dışa Aktar",
+      "formats": "Formatlar",
+      "download": "İndir",
+      "css": "CSS",
+      "json": "JSON",
+      "ase": "Adobe ASE",
+      "sketchPalette": "Sketch Palet"
+    },
+    "status": {
+      "uploading": "Yükleniyor...",
+      "analyzing": "Analiz ediliyor...",
+      "extracting": "Çıkarılıyor...",
+      "ready": "Hazır",
+      "error": "Hata oluştu"
+    },
+    "tips": {
+      "title": "İpuçları",
+      "upload": "En iyi sonuçlar için yüksek kaliteli, yüksek kontrastlı görseller kullanın",
+      "picker": "Hassas renk seçimi için yakınlaştırma özelliğini kullanın",
+      "palette": "Renkleri ideal sıralarına göre düzenlemek için sürükleyin"
+    }
+  }
+}

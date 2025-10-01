@@ -1,0 +1,471 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "backToHome": "Back to Home",
+    "settings": "Settings",
+    "title": "renk kodu bulma",
+    "generator": "Generator",
+    "random": "Random",
+    "fromImage": "From Image",
+    "mixer": "Mixer",
+    "contrast": "Contrast",
+    "login": "Login",
+    "register": "Register",
+    "workspace": "Workspace",
+    "advanced": "Advanced"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "upload": "Upload",
+    "download": "Download",
+    "free": "Free",
+    "paid": "Paid",
+    "comingSoon": "Coming Soon",
+    "underDevelopment": "Under Development",
+    "language": "Language",
+    "reset": "Reset",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "generating": "Generating...",
+    "generated": "Generated",
+    "failed": "Failed",
+    "search": "Search",
+    "back": "Back"
+  },
+  "home": {
+    "title": "WebApp Framework",
+    "description": "Modern web application development framework supporting layered architecture, plugin coupling, and internationalization"
+  },
+  "homepage": {
+    "navigation": {
+      "features": "Features",
+      "howItWorks": "How It Works",
+      "examples": "Examples",
+      "about": "About",
+      "startAnalyzing": "Start Analyzing"
+    },
+    "hero": {
+      "announcement": "🎨 AI-powered color analysis tool now available.",
+      "learnMore": "Learn More",
+      "title": "Discover Perfect Colors in Any Image",
+      "subtitle": "Upload any image and instantly extract beautiful color palettes. Analyze, pick, and export colors with professional precision for your design projects.",
+      "startColorAnalysis": "Start Color Analysis",
+      "howItWorks": "How It Works"
+    },
+    "examples": {
+      "title": "See renk kodu bulma in Action",
+      "subtitle": "Real examples of color palettes extracted from beautiful images",
+      "sunsetLandscape": {
+        "title": "Sunset Landscape",
+        "description": "Warm, vibrant palette perfect for autumn designs"
+      },
+      "oceanWaves": {
+        "title": "Ocean Waves",
+        "description": "Cool, calming palette ideal for wellness brands"
+      },
+      "forestNature": {
+        "title": "Forest Nature",
+        "description": "Natural, earthy palette for eco-friendly projects"
+      }
+    },
+    "features": {
+      "title": "Powerful Color Analysis Features",
+      "subtitle": "Everything you need to extract and work with colors from images",
+      "smartImageUpload": {
+        "title": "Smart Image Upload",
+        "description": "Drag and drop any image or click to browse. Supports JPG, PNG, WebP and GIF formats, up to 10MB."
+      },
+      "aiColorExtraction": {
+        "title": "AI Color Extraction",
+        "description": "Advanced AI algorithms automatically detect and extract the most prominent colors from your images."
+      },
+      "manualColorPicker": {
+        "title": "Manual Color Picker",
+        "description": "Click anywhere on your image to manually pick specific colors with pixel-perfect accuracy."
+      },
+      "colorPaletteManagement": {
+        "title": "Color Palette Management",
+        "description": "Organize your colors into custom palettes with drag-and-drop reordering and easy removal."
+      },
+      "multipleExportFormats": {
+        "title": "Multiple Export Formats",
+        "description": "Export your color palettes in various formats: HEX, RGB, HSL, CSS, Adobe ASE and Sketch."
+      },
+      "realtimeAnalysis": {
+        "title": "Real-time Analysis",
+        "description": "See instant results as you upload and interact with your images. No waiting, just immediate color insights."
+      }
+    },
+    "howItWorks": {
+      "title": "Simple, Fast, Professional",
+      "subtitle": "Three simple steps to extract perfect colors from any image",
+      "uploadImage": {
+        "title": "1. Upload Your Image",
+        "description": "Drag and drop any image or click to browse. We support all major image formats."
+      },
+      "analyzePickColors": {
+        "title": "2. Analyze & Pick Colors",
+        "description": "Our AI automatically extracts main colors, or manually select specific colors by clicking on the image."
+      },
+      "exportPalette": {
+        "title": "3. Export Your Palette",
+        "description": "Download your color palette in multiple formats for use in design software, websites, or apps."
+      }
+    },
+    "header": {
+      "title": "Trusted by Creative Professionals",
+      "subtitle": "Join thousands of designers, developers and creative professionals who use renk kodu bulma to discover perfect color palettes from any image. Experience the power of AI-driven color analysis.",
+      "startFreeAnalysis": "Start Free Analysis",
+      "viewExamples": "View Examples",
+      "exploreFeatures": "Explore Features",
+      "stats": {
+        "imagesAnalyzed": "Images Analyzed",
+        "activeUsers": "Active Users",
+        "colorPalettesCreated": "Color Palettes Created",
+        "accuracyRate": "Accuracy Rate"
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Your Creative Journey?",
+      "subtitle": "Join hundreds of thousands of users in the creative community and unleash your creative potential with AI technology",
+      "getStartedForFree": "Get Started for Free",
+      "learnMore": "Learn More"
+    },
+    "footer": {
+      "description": "renk kodu bulma makes image color analysis simple and efficient. Our AI technology helps designers and developers discover perfect color combinations from any image.",
+      "brandName": "renk kodu bulma",
+      "solutions": {
+        "title": "Core Features",
+        "colorAnalysis": "AI Color Analysis",
+        "paletteExtraction": "Palette Extraction",
+        "aiTechnology": "Smart Technology",
+        "exportTools": "Export Tools",
+        "designInsights": "Design Insights"
+      },
+      "support": {
+        "title": "Help & Support",
+        "contact": "Contact Us",
+        "documentation": "Documentation",
+        "userGuide": "User Guide"
+      },
+      "company": {
+        "title": "Company",
+        "about": "About Us",
+        "blog": "Blog",
+        "careers": "Careers",
+        "press": "Press"
+      },
+      "legal": {
+        "title": "Legal",
+        "terms": "Terms of Service",
+        "privacy": "Privacy Policy",
+        "license": "License"
+      },
+      "copyright": "© 2024 renk kodu bulma, Inc. All rights reserved."
+    }
+  },
+  "about": {
+    "title": "About renk kodu bulma",
+    "subtitle": "Professional AI-powered color analysis tool",
+    "description": "renk kodu bulma uses advanced machine learning algorithms to analyze images and extract the most beautiful and harmonious color palettes. Whether you're a designer, developer, or creative professional, renk kodu bulma helps you discover perfect colors for your projects.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To democratize color analysis and make professional-grade color extraction accessible to everyone."
+    },
+    "vision": {
+      "title": "Our Vision", 
+      "description": "To become the world's leading AI-powered color analysis platform, helping millions of creators bring their visions to life."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "If you have any questions or suggestions, please feel free to contact us",
+      "link": "Send Message"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you",
+    "description": "Have questions, suggestions, or feedback? Get in touch with our team.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What's this about?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us more...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message, please try again"
+    },
+    "info": {
+      "title": "Get in Touch",
+      "email": "support@colormagic.com",
+      "response": "We typically respond within 24 hours"
+    }
+  },
+  "generator": {
+    "title": "Color Palette Generator",
+    "upload": {
+      "title": "Upload Image",
+      "description": "Choose an image to extract colors from",
+      "dragDrop": "Drag and drop an image here, or click to select",
+      "supportedFormats": "Supported formats: JPG, PNG, GIF",
+      "maxSize": "Maximum file size: 10MB"
+    },
+    "analysis": {
+      "title": "Analysis Settings",
+      "colorCount": "Number of Colors",
+      "colorCountDescription": "How many colors to extract",
+      "algorithm": "Extraction Algorithm",
+      "algorithmDescription": "Method for color extraction",
+      "algorithms": {
+        "kmeans": "K-Means Clustering",
+        "dominant": "Dominant Colors",
+        "histogram": "Color Histogram"
+      },
+      "sensitivity": "Sensitivity",
+      "sensitivityDescription": "Color detection sensitivity",
+      "levels": {
+        "low": "Low",
+        "medium": "Medium", 
+        "high": "High",
+        "maximum": "Maximum"
+      }
+    },
+    "results": {
+      "title": "Extracted Colors",
+      "palette": "Color Palette",
+      "details": "Color Details",
+      "export": "Export Options",
+      "formats": {
+        "hex": "HEX Values",
+        "rgb": "RGB Values", 
+        "hsl": "HSL Values",
+        "css": "CSS Variables",
+        "scss": "SCSS Variables",
+        "json": "JSON Format",
+        "ase": "Adobe Swatch",
+        "gpl": "GIMP Palette",
+        "png": "PNG Image"
+      }
+    },
+    "controls": {
+      "analyze": "Analyze Image",
+      "analyzing": "Analyzing...",
+      "reset": "Reset",
+      "download": "Download Palette"
+    },
+    "errors": {
+      "noImage": "Please select an image first",
+      "invalidFormat": "Invalid image format",
+      "fileTooLarge": "File too large (max 10MB)",
+      "analysisError": "Analysis failed, please try again",
+      "exportError": "Export failed, please try again"
+    },
+    "tips": {
+      "title": "Tips for Better Results",
+      "items": [
+        "Use high-quality images for more accurate color extraction",
+        "Images with clear color separation work best",
+        "Try different algorithms for varied results",
+        "Adjust sensitivity based on image complexity"
+      ]
+    }
+  },
+  "test": {
+    "title": "renk kodu bulma Test Page",
+    "frontend": {
+      "title": "Frontend Service Normal",
+      "description": "If you can see this page, it means the frontend server has started normally."
+    },
+    "system": {
+      "title": "System Information",
+      "frontendPort": "Frontend Port: 5173",
+      "backendPort": "Backend Port: 3001",
+      "currentTime": "Current Time",
+      "browser": "Browser"
+    },
+    "nextSteps": {
+      "title": "Next Steps",
+      "description": "After the basic page is normal, you can visit:",
+      "home": "Home",
+      "app": "ColorCraft App",
+      "authTest": "Authentication System Test"
+    },
+    "refresh": "Refresh Page"
+  },
+  "auth": {
+    "login": {
+      "title": "Login to renk kodu bulma",
+      "subtitle": "Continue your color exploration journey",
+      "email": "Email Address",
+      "emailPlaceholder": "your@example.com",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot password?",
+      "loginButton": "Login",
+      "orLoginWith": "Or login with",
+      "github": "GitHub",
+      "google": "Google",
+      "noAccount": "Don't have an account?",
+      "registerLink": "Sign up now"
+    },
+    "register": {
+      "title": "Sign up for renk kodu bulma",
+      "subtitle": "Start your color exploration journey",
+      "email": "Email Address",
+      "emailPlaceholder": "your@example.com",
+      "username": "Username",
+      "usernamePlaceholder": "Enter your username",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "confirmPassword": "Confirm Password",
+      "confirmPasswordPlaceholder": "Enter your password again",
+      "displayName": "Display Name",
+      "displayNamePlaceholder": "Enter display name (optional)",
+      "agreeTerms": "I agree to the",
+      "termsOfService": "Terms of Service",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy",
+      "registerButton": "Register",
+      "orRegisterWith": "Or register with",
+      "github": "GitHub",
+      "google": "Google",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Sign in now"
+    },
+    "user": {
+      "profile": "Profile",
+      "settings": "Settings",
+      "myPalettes": "My Palettes",
+      "favorites": "Favorites",
+      "history": "History",
+      "subscription": "Subscription",
+      "logout": "Logout",
+      "free": "Free User",
+      "premium": "Premium User",
+      "vip": "VIP User"
+    },
+    "messages": {
+      "loginSuccess": "Login successful!",
+      "loginFailed": "Login failed, please check your email and password",
+      "registerSuccess": "Registration successful!",
+      "registerFailed": "Registration failed, please try again",
+      "logoutSuccess": "Successfully logged out",
+      "emailRequired": "Please enter your email address",
+      "passwordRequired": "Please enter your password",
+      "usernameRequired": "Please enter your username",
+      "passwordMismatch": "Passwords do not match",
+      "invalidEmail": "Please enter a valid email address",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "usernameTooShort": "Username must be at least 3 characters"
+    },
+    "forgotPassword": {
+      "title": "Password Reset",
+      "comingSoon": "Feature coming soon"
+    }
+  },
+  "colorAnalysis": {
+    "title": "Pick colors from any image",
+    "subtitle": "Extract color palettes from images",
+    "description": "Upload any image to instantly extract beautiful color palettes",
+    "upload": {
+      "title": "Upload Image",
+      "dragText": "Drag image here",
+      "clickText": "or click to select file",
+      "supportedFormats": "Supports JPG, PNG, WebP, GIF formats",
+      "maxSize": "Max file size: 10MB",
+      "uploading": "Uploading...",
+      "success": "Upload successful",
+      "error": "Upload failed, please try again",
+      "instructions": "Supports drag & drop or click to select. Recommend image size under 1920x1080 for optimal processing speed.",
+      "reupload": "Re-upload"
+    },
+    "extraction": {
+      "title": "Color Extraction",
+      "analyzing": "Analyzing...",
+      "colorCount": "Color count",
+      "extractColors": "Extract Colors",
+      "autoExtracted": "Auto Extract",
+      "manualPicked": "Manual Pick",
+      "dominantColors": "Dominant Colors",
+      "extracting": "Extracting",
+      "reExtract": "Re-extract"
+    },
+    "picker": {
+      "title": "Image Preview",
+      "activate": "Pick Color",
+      "deactivate": "Exit Pick",
+      "active": "Pick Mode",
+      "inactive": "Color Picker",
+      "zoomIn": "Zoom In",
+      "zoomOut": "Zoom Out",
+      "reset": "Reset",
+      "selectedColor": "Selected Color",
+      "clickToPickColor": "Click image to pick color",
+      "colorPicked": "Color picked",
+      "position": "Position",
+      "zoomLevel": "Zoom Level"
+    },
+    "palette": {
+      "title": "Final Palette",
+      "colors": "colors",
+      "empty": "No colors",
+      "emptySlot": "Empty slot",
+      "addColor": "Add Color",
+      "removeColor": "Remove Color",
+      "copyHex": "Copy HEX",
+      "copyRgb": "Copy RGB",
+      "copyAll": "Copy All",
+      "reorder": "Drag to reorder",
+      "export": "Export Palette",
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "neutral": "Neutral",
+      "manual": "Manual",
+      "manualPicker": "Manual Pick",
+      "noExtractedColors": "No auto-extracted colors",
+      "clickImageToPick": "Click image to manually pick colors",
+      "maxColorsReached": "Max limit reached (12), please remove some colors to continue",
+      "clear": "Clear",
+      "clearAll": "Clear All",
+      "copied": "Copied: {{value}}"
+    },
+    "export": {
+      "title": "Export",
+      "formats": "Formats",
+      "download": "Download",
+      "css": "CSS",
+      "json": "JSON",
+      "ase": "Adobe ASE",
+      "sketchPalette": "Sketch Palette"
+    },
+    "status": {
+      "uploading": "Uploading...",
+      "analyzing": "Analyzing...",
+      "extracting": "Extracting...",
+      "ready": "Ready",
+      "error": "Error occurred"
+    },
+    "tips": {
+      "title": "Tips",
+      "upload": "Use high-quality, high-contrast images for best results",
+      "picker": "Use zoom feature for precise color selection",
+      "palette": "Drag colors to arrange them in your ideal order"
+    }
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "about": "概要",
+    "contact": "お問い合わせ",
+    "backToHome": "ホームに戻る",
+    "settings": "設定",
+    "title": "renk kodu bulma",
+    "generator": "ジェネレーター",
+    "random": "ランダム",
+    "fromImage": "画像から",
+    "mixer": "ミキサー",
+    "contrast": "コントラスト",
+    "login": "ログイン",
+    "register": "登録",
+    "workspace": "ワークスペース",
+    "advanced": "高度な機能"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "cancel": "キャンセル",
+    "confirm": "確認",
+    "save": "保存",
+    "delete": "削除",
+    "edit": "編集",
+    "create": "作成",
+    "upload": "アップロード",
+    "download": "ダウンロード",
+    "free": "無料",
+    "paid": "有料",
+    "comingSoon": "近日公開",
+    "underDevelopment": "開発中",
+    "language": "言語",
+    "reset": "リセット",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "generating": "生成中...",
+    "generated": "生成完了",
+    "failed": "失敗",
+    "search": "検索",
+    "back": "戻る",
+    "close": "閉じる"
+  },
+  "auth": {
+    "login": {
+      "title": "renk kodu bulmaにログイン",
+      "subtitle": "カラー探索の旅を続ける",
+      "email": "メールアドレス",
+      "emailPlaceholder": "your@example.com",
+      "password": "パスワード",
+      "passwordPlaceholder": "パスワードを入力",
+      "rememberMe": "ログイン状態を保持",
+      "forgotPassword": "パスワードを忘れましたか？",
+      "loginButton": "ログイン",
+      "orLoginWith": "または次のアカウントでログイン",
+      "github": "GitHub",
+      "google": "Google",
+      "noAccount": "アカウントをお持ちでないですか？",
+      "registerLink": "今すぐ登録"
+    },
+    "register": {
+      "title": "renk kodu bulmaに登録",
+      "subtitle": "カラー探索の旅を始める",
+      "email": "メールアドレス",
+      "emailPlaceholder": "your@example.com", 
+      "username": "ユーザー名",
+      "usernamePlaceholder": "ユーザー名を入力",
+      "password": "パスワード",
+      "passwordPlaceholder": "パスワードを入力",
+      "confirmPassword": "パスワード確認",
+      "confirmPasswordPlaceholder": "パスワードを再入力",
+      "displayName": "表示名",
+      "displayNamePlaceholder": "表示名を入力（任意）",
+      "agreeTerms": "次に同意します",
+      "termsOfService": "利用規約",
+      "and": "と",
+      "privacyPolicy": "プライバシーポリシー",
+      "registerButton": "登録",
+      "orRegisterWith": "または次のアカウントで登録",
+      "github": "GitHub",
+      "google": "Google",
+      "hasAccount": "すでにアカウントをお持ちですか？",
+      "loginLink": "今すぐログイン"
+    },
+    "user": {
+      "profile": "プロフィール",
+      "settings": "設定",
+      "myPalettes": "マイパレット",
+      "favorites": "お気に入り",
+      "history": "履歴",
+      "subscription": "サブスクリプション",
+      "logout": "ログアウト",
+      "free": "無料ユーザー",
+      "premium": "プレミアムユーザー",
+      "vip": "VIPユーザー"
+    },
+    "messages": {
+      "loginSuccess": "ログインに成功しました！",
+      "loginFailed": "ログインに失敗しました。メールアドレスとパスワードを確認してください",
+      "registerSuccess": "登録に成功しました！",
+      "registerFailed": "登録に失敗しました。もう一度お試しください",
+      "logoutSuccess": "ログアウトしました",
+      "emailRequired": "メールアドレスを入力してください",
+      "passwordRequired": "パスワードを入力してください",
+      "usernameRequired": "ユーザー名を入力してください",
+      "passwordMismatch": "パスワードが一致しません",
+      "invalidEmail": "有効なメールアドレスを入力してください",
+      "passwordTooShort": "パスワードは最低6文字である必要があります",
+      "usernameTooShort": "ユーザー名は最低3文字である必要があります",
+      "usernameTooLong": "ユーザー名は30文字以下である必要があります",
+      "usernameInvalidChars": "ユーザー名には英数字、アンダースコア、ハイフンのみ使用できます",
+      "passwordWeakStrength": "パスワード強度が不十分です。大文字、小文字、数字、特殊文字を含めてください",
+      "confirmPasswordRequired": "パスワードの確認を入力してください",
+      "agreeToTermsRequired": "利用規約とプライバシーポリシーに同意してください"
+    },
+    "forgotPassword": {
+      "title": "パスワードリセット",
+      "comingSoon": "機能開発中です。しばらくお待ちください..."
+    }
+  },
+  "test": {
+    "title": "renk kodu bulma テストページ",
+    "frontend": {
+      "title": "フロントエンドサービス正常",
+      "description": "このページが表示されている場合、フロントエンドサーバーが正常に起動しています。"
+    },
+    "system": {
+      "title": "システム情報",
+      "frontendPort": "フロントエンドポート: 5173",
+      "backendPort": "バックエンドポート: 3001",
+      "currentTime": "現在時刻",
+      "browser": "ブラウザ"
+    },
+    "nextSteps": {
+      "title": "次のステップ",
+      "description": "基本ページが正常に動作した後、以下にアクセスできます：",
+      "home": "ホーム",
+      "app": "ColorCraftアプリ",
+      "authTest": "認証システムテスト"
+    },
+    "refresh": "ページを更新"
+  },
+  "homepage": {
+    "navigation": {
+      "features": "機能",
+      "howItWorks": "使い方",
+      "examples": "例",
+      "about": "概要",
+      "startAnalyzing": "分析開始"
+    },
+    "hero": {
+      "announcement": "🎨 AI搭載カラー分析ツールが利用可能になりました。",
+      "learnMore": "詳細を見る",
+      "title": "あらゆる画像で完璧な色を発見",
+      "subtitle": "任意の画像をアップロードして、美しいカラーパレットを即座に抽出。デザインプロジェクトのために、プロフェッショナルな精度で色を分析、選択、エクスポート。",
+      "startColorAnalysis": "カラー分析開始",
+      "howItWorks": "使い方"
+    },
+    "examples": {
+      "title": "renk kodu bulmaの実際の動作",
+      "subtitle": "美しい画像から抽出された実際のカラーパレットの例",
+      "sunsetLandscape": {
+        "title": "夕日の風景",
+        "description": "秋のデザインに最適な暖かく鮮やかなパレット"
+      },
+      "oceanWaves": {
+        "title": "海の波",
+        "description": "ウェルネスブランドに理想的な涼しく落ち着いたパレット"
+      },
+      "forestNature": {
+        "title": "森の自然",
+        "description": "エコフレンドリープロジェクトのための自然でアースカラーのパレット"
+      }
+    },
+    "features": {
+      "title": "強力なカラー分析機能",
+      "subtitle": "画像から色を抽出し、作業するために必要なすべて",
+      "smartImageUpload": {
+        "title": "スマート画像アップロード",
+        "description": "任意の画像をドラッグ&ドロップまたはクリックしてブラウズ。JPG、PNG、WebP、GIF形式をサポート、最大10MB。"
+      },
+      "aiColorExtraction": {
+        "title": "AIカラー抽出",
+        "description": "高度なAIアルゴリズムが画像から最も目立つ色を自動検出・抽出します。"
+      },
+      "manualColorPicker": {
+        "title": "手動カラーピッカー",
+        "description": "画像の任意の場所をクリックして、ピクセル完璧な精度で特定の色を手動選択。"
+      },
+      "colorPaletteManagement": {
+        "title": "カラーパレット管理",
+        "description": "カスタムパレットに色を整理し、ドラッグ&ドロップで並び替えと簡単削除。"
+      },
+      "multipleExportFormats": {
+        "title": "複数のエクスポート形式",
+        "description": "様々な形式でカラーパレットをエクスポート：HEX、RGB、HSL、CSS、Adobe ASE、Sketch。"
+      },
+      "realtimeAnalysis": {
+        "title": "リアルタイム分析",
+        "description": "アップロードや画像操作時に即座に結果を確認。待機なし、即座にカラーインサイトを取得。"
+      }
+    },
+    "howItWorks": {
+      "title": "シンプル、高速、プロフェッショナル",
+      "subtitle": "あらゆる画像から完璧な色を抽出する3つの簡単なステップ",
+      "uploadImage": {
+        "title": "1. 画像をアップロード",
+        "description": "任意の画像をドラッグ&ドロップまたはクリックしてブラウズ。すべての主要画像形式をサポート。"
+      },
+      "analyzePickColors": {
+        "title": "2. 分析・色選択",
+        "description": "AIが自動的にメインカラーを抽出、または画像をクリックして特定の色を手動選択。"
+      },
+      "exportPalette": {
+        "title": "3. パレットのエクスポート",
+        "description": "デザインソフトウェア、ウェブサイト、アプリで使用するために複数形式でカラーパレットをダウンロード。"
+      }
+    },
+    "header": {
+      "title": "クリエイティブプロフェッショナルに信頼される",
+      "subtitle": "数千のデザイナー、開発者、クリエイティブプロフェッショナルがrenk kodu bulmaを使用して、任意の画像から完璧なカラーパレットを発見しています。AI駆動のカラー分析の力を体験してください。",
+      "startFreeAnalysis": "無料分析開始",
+      "viewExamples": "例を見る",
+      "exploreFeatures": "機能を探る",
+      "stats": {
+        "imagesAnalyzed": "分析された画像",
+        "activeUsers": "アクティブユーザー",
+        "colorPalettesCreated": "作成されたカラーパレット",
+        "accuracyRate": "精度率"
+      }
+    },
+    "cta": {
+      "title": "クリエイティブな旅を始める準備はできましたか？",
+      "subtitle": "クリエイティブコミュニティの数十万のユーザーに加わり、AI技術でクリエイティブな可能性を解き放ちましょう",
+      "getStartedForFree": "無料で始める",
+      "learnMore": "詳細を見る"
+    },
+    "footer": {
+      "description": "renk kodu bulmaは画像のカラー分析をシンプルで効率的にします。私たちのAI技術は、デザイナーや開発者が任意の画像から完璧なカラーコンビネーションを発見するのを支援します。",
+      "brandName": "renk kodu bulma",
+      "solutions": {
+        "title": "コア機能",
+        "colorAnalysis": "AIカラー分析",
+        "paletteExtraction": "パレット抽出",
+        "aiTechnology": "スマート技術",
+        "exportTools": "エクスポートツール",
+        "designInsights": "デザインインサイト"
+      },
+      "support": {
+        "title": "ヘルプ・サポート",
+        "contact": "お問い合わせ",
+        "documentation": "ドキュメント",
+        "userGuide": "ユーザーガイド"
+      },
+      "company": {
+        "title": "会社情報",
+        "about": "私たちについて",
+        "blog": "ブログ",
+        "careers": "採用情報",
+        "press": "プレス"
+      },
+      "legal": {
+        "title": "法的事項",
+        "terms": "利用規約",
+        "privacy": "プライバシーポリシー",
+        "license": "ライセンス"
+      },
+      "copyright": "© 2024 renk kodu bulma, Inc. 全著作権所有。"
+    }
+  },
+  "colorAnalysis": {
+    "title": "どんな画像からでも色を抽出",
+    "subtitle": "画像からカラーパレットを抽出",
+    "description": "任意の画像をアップロードして、美しいカラーパレットを即座に抽出します",
+    "upload": {
+      "title": "画像をアップロード",
+      "dragText": "画像をここにドラッグ",
+      "clickText": "またはクリックしてファイルを選択",
+      "supportedFormats": "JPG、PNG、WebP、GIF形式をサポート",
+      "maxSize": "最大ファイルサイズ：10MB",
+      "uploading": "アップロード中...",
+      "success": "アップロード成功",
+      "error": "アップロードに失敗しました。再試行してください",
+      "instructions": "ドラッグ&ドロップまたはクリック選択をサポート。最適な処理速度のため、画像サイズは1920x1080以下を推奨。",
+      "reupload": "再アップロード"
+    },
+    "extraction": {
+      "title": "カラー抽出",
+      "analyzing": "分析中...",
+      "colorCount": "カラー数",
+      "extractColors": "カラーを抽出",
+      "autoExtracted": "自動抽出",
+      "manualPicked": "手動選択",
+      "dominantColors": "主要カラー",
+      "extracting": "抽出中",
+      "reExtract": "再抽出"
+    },
+    "picker": {
+      "title": "画像プレビュー",
+      "activate": "カラー選択",
+      "deactivate": "選択終了",
+      "active": "選択モード",
+      "inactive": "カラーピッカー",
+      "zoomIn": "拡大",
+      "zoomOut": "縮小",
+      "reset": "リセット",
+      "selectedColor": "選択されたカラー",
+      "clickToPickColor": "画像をクリックしてカラーを選択",
+      "colorPicked": "カラーが選択されました",
+      "position": "位置",
+      "zoomLevel": "拡大レベル"
+    },
+    "palette": {
+      "title": "最終パレット",
+      "colors": "色",
+      "empty": "カラーがありません",
+      "emptySlot": "空きスロット",
+      "addColor": "カラーを追加",
+      "removeColor": "カラーを削除",
+      "copyHex": "HEXをコピー",
+      "copyRgb": "RGBをコピー",
+      "copyAll": "すべてコピー",
+      "reorder": "ドラッグして並び替え",
+      "export": "パレットをエクスポート",
+      "primary": "メインカラー",
+      "secondary": "サブカラー",
+      "neutral": "ニュートラルカラー",
+      "manual": "手動",
+      "manualPicker": "手動カラー選択",
+      "noExtractedColors": "自動抽出されたカラーがありません",
+      "clickImageToPick": "画像をクリックして手動でカラーを選択",
+      "maxColorsReached": "最大数に達しました（12個）。カラーを削除してから続行してください",
+      "clear": "クリア",
+      "clearAll": "すべてクリア",
+      "copied": "コピーしました: {{value}}"
+    },
+    "export": {
+      "title": "エクスポート",
+      "formats": "形式",
+      "download": "ダウンロード",
+      "css": "CSS",
+      "json": "JSON",
+      "ase": "Adobe ASE",
+      "sketchPalette": "Sketch Palette"
+    },
+    "status": {
+      "uploading": "アップロード中...",
+      "analyzing": "分析中...",
+      "extracting": "抽出中...",
+      "ready": "準備完了",
+      "error": "エラーが発生しました"
+    },
+    "tips": {
+      "title": "ヒント",
+      "upload": "最適な結果を得るために、コントラストの高い高品質画像を使用してください",
+      "picker": "正確なカラー選択のために拡大機能を使用してください",
+      "palette": "カラーをドラッグして理想的な順序に並び替えてください"
+    }
+  }
+}

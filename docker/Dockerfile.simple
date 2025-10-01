@@ -1,0 +1,40 @@
+# ============================================================================
+# Universal Web Template - Dockerfile
+# 
+# 单阶段构建策略（前端已在外部构建）
+# 符合VPS部署规范
+# ============================================================================
+
+FROM node:22-alpine
+
+# 设置工作目录
+WORKDIR /app
+
+# 复制package文件
+COPY package*.json ./
+
+# 安装生产依赖
+RUN npm ci --only=production --no-audit --no-fund && \
+    npm cache clean --force
+
+# 复制应用代码
+# 如果使用TypeScript，复制编译后的dist目录
+COPY dist ./dist
+
+# 复制前端构建产物（已经在外部构建好）
+COPY frontend ./frontend
+
+# 创建上传目录
+RUN mkdir -p /app/uploads && \
+    chmod 755 /app/uploads
+
+# 暴露端口
+EXPOSE 3000
+
+# 健康检查
+HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
+    CMD node -e "require('http').get('http://localhost:3000/health', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"
+
+# 启动应用（使用编译后的JS）
+CMD ["node", "dist/index.js"]
+
