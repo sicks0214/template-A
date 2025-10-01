@@ -49,12 +49,21 @@ echo -e "${NC}\n"
 echo_info "验证文件: $ENV_FILE"
 echo ""
 
-# 加载环境变量（安全方式，支持特殊字符）
-set -a
-set +e  # 临时关闭错误退出，避免source失败导致脚本中断
-source "$ENV_FILE" 2>/dev/null || true
-set -e  # 恢复错误退出
-set +a
+# 加载环境变量（使用最可靠的方式）
+while IFS='=' read -r key value; do
+    # 跳过注释和空行
+    [[ "$key" =~ ^#.*$ ]] && continue
+    [[ -z "$key" ]] && continue
+    
+    # 移除value前后的空格和引号
+    value="${value%\"}"
+    value="${value#\"}"
+    value="${value%\'}"
+    value="${value#\'}"
+    
+    # 导出环境变量
+    export "$key=$value"
+done < "$ENV_FILE"
 
 # 验证计数器
 ERRORS=0
