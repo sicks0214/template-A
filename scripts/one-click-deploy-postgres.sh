@@ -160,20 +160,33 @@ print_step "步骤 2: 编译TypeScript代码"
 
 cd backend
 
-# 检查node_modules
-if [ ! -d "node_modules" ]; then
-    print_warning "node_modules不存在，正在安装依赖..."
-    npm install
-fi
-
-# 编译TypeScript
-print_step "正在编译TypeScript..."
-npm run build
-
-# 验证编译结果
-if [ ! -d "dist" ] || [ -z "$(ls -A dist)" ]; then
-    print_error "TypeScript编译失败"
-    exit 1
+# 检查是否已有编译产物
+if [ -d "dist" ] && [ -n "$(ls -A dist 2>/dev/null)" ]; then
+    print_success "使用已有的编译产物（dist目录已存在）"
+else
+    # 使用Docker容器编译（VPS上可能没有npm）
+    print_step "使用Docker容器编译TypeScript..."
+    
+    if command -v npm &> /dev/null; then
+        # 本地有npm，直接编译
+        if [ ! -d "node_modules" ]; then
+            npm install
+        fi
+        npm run build
+    else
+        # 使用Docker编译
+        docker run --rm -v "$(pwd)":/app -w /app node:18-alpine sh -c "
+            npm ci --no-audit --no-fund && \
+            npm run build && \
+            chown -R $(id -u):$(id -g) dist
+        "
+    fi
+    
+    # 验证编译结果
+    if [ ! -d "dist" ] || [ -z "$(ls -A dist)" ]; then
+        print_error "TypeScript编译失败"
+        exit 1
+    fi
 fi
 
 print_success "TypeScript编译完成"
@@ -188,24 +201,29 @@ print_step "步骤 3: 构建前端（使用Docker容器）"
 
 cd frontend
 
-# 生成package-lock.json（如果不存在）
-if [ ! -f "package-lock.json" ]; then
-    print_step "生成package-lock.json..."
-    docker run --rm -v "$(pwd)":/app -w /app node:22-alpine sh -c "npm install --package-lock-only"
-fi
+# 检查是否已有编译产物
+if [ -d "dist" ] && [ -f "dist/index.html" ]; then
+    print_success "使用已有的编译产物（dist目录已存在）"
+else
+    # 生成package-lock.json（如果不存在）
+    if [ ! -f "package-lock.json" ]; then
+        print_step "生成package-lock.json..."
+        docker run --rm -v "$(pwd)":/app -w /app node:22-alpine sh -c "npm install --package-lock-only"
+    fi
 
-# 在Docker容器中构建前端
-print_step "Docker容器中执行前端构建..."
-docker run --rm -v "$(pwd)":/app -w /app node:22-alpine sh -c "
-    npm ci --no-audit --no-fund && \
-    npm run build && \
-    chown -R $(id -u):$(id -g) dist
-"
+    # 在Docker容器中构建前端
+    print_step "Docker容器中执行前端构建..."
+    docker run --rm -v "$(pwd)":/app -w /app node:22-alpine sh -c "
+        npm ci --no-audit --no-fund && \
+        npm run build && \
+        chown -R $(id -u):$(id -g) dist
+    "
 
-# 验证构建结果
-if [ ! -d "dist" ] || [ ! -f "dist/index.html" ]; then
-    print_error "前端构建失败"
-    exit 1
+    # 验证构建结果
+    if [ ! -d "dist" ] || [ ! -f "dist/index.html" ]; then
+        print_error "前端构建失败"
+        exit 1
+    fi
 fi
 
 # 复制到后端目录
