@@ -28,14 +28,23 @@ class AuthService {
    */
   async register(data: RegisterRequest): Promise<RegisterResponse> {
     try {
-      const response = await apiClient.post<RegisterResponse>('/auth/register', data);
+      const response = await apiClient.post<any>('/auth/register', data);
       
-      if (response.data.success && response.data.data) {
-        this.setTokens(response.data.data.token);
-        this.setUser(response.data.data.user);
+      if (!response.success) {
+        throw new Error(response.error?.message || '注册失败');
       }
       
-      return response.data;
+      if (response.data) {
+        this.setTokens(response.data.token);
+        this.setUser(response.data.user);
+      }
+      
+      return {
+        success: true,
+        data: response.data,
+        message: '注册成功',
+        timestamp: response.timestamp || new Date().toISOString()
+      };
     } catch (error) {
       console.error('注册失败:', error);
       throw this.handleAuthError(error);
@@ -47,14 +56,23 @@ class AuthService {
    */
   async login(data: LoginRequest): Promise<LoginResponse> {
     try {
-      const response = await apiClient.post<LoginResponse>('/auth/login', data);
+      const response = await apiClient.post<any>('/auth/login', data);
       
-      if (response.data.success && response.data.data) {
-        this.setTokens(response.data.data.token, response.data.data.refresh_token);
-        this.setUser(response.data.data.user);
+      if (!response.success) {
+        throw new Error(response.error?.message || '登录失败');
       }
       
-      return response.data;
+      if (response.data) {
+        this.setTokens(response.data.token, response.data.refresh_token);
+        this.setUser(response.data.user);
+      }
+      
+      return {
+        success: true,
+        data: response.data,
+        message: '登录成功',
+        timestamp: response.timestamp || new Date().toISOString()
+      };
     } catch (error) {
       console.error('登录失败:', error);
       throw this.handleAuthError(error);
@@ -81,14 +99,14 @@ class AuthService {
    */
   async getCurrentUser(): Promise<User> {
     try {
-      const response = await apiClient.get<ApiResponse<{ user: User }>>('/auth/profile');
+      const response = await apiClient.get<any>('/auth/profile');
       
-      if (response.data.success && response.data.data) {
-        this.setUser(response.data.data.user);
-        return response.data.data.user;
+      if (!response.success || !response.data) {
+        throw new Error(response.error?.message || '获取用户信息失败');
       }
       
-      throw new Error('获取用户信息失败');
+      this.setUser(response.data.user);
+      return response.data.user;
     } catch (error) {
       console.error('获取用户信息失败:', error);
       throw this.handleAuthError(error);
@@ -100,14 +118,14 @@ class AuthService {
    */
   async updateUser(data: UpdateUserRequest): Promise<User> {
     try {
-      const response = await apiClient.put<ApiResponse<{ user: User }>>('/auth/profile', data);
+      const response = await apiClient.put<any>('/auth/profile', data);
       
-      if (response.data.success && response.data.data) {
-        this.setUser(response.data.data.user);
-        return response.data.data.user;
+      if (!response.success || !response.data) {
+        throw new Error(response.error?.message || '更新用户信息失败');
       }
       
-      throw new Error('更新用户信息失败');
+      this.setUser(response.data.user);
+      return response.data.user;
     } catch (error) {
       console.error('更新用户信息失败:', error);
       throw this.handleAuthError(error);
@@ -119,10 +137,10 @@ class AuthService {
    */
   async changePassword(data: ChangePasswordRequest): Promise<void> {
     try {
-      const response = await apiClient.post<ApiResponse>('/auth/change-password', data);
+      const response = await apiClient.post<any>('/auth/change-password', data);
       
-      if (!response.data.success) {
-        throw new Error(response.data.error || '修改密码失败');
+      if (!response.success) {
+        throw new Error(response.error?.message || '修改密码失败');
       }
       
       // 密码修改成功后需要重新登录
@@ -143,16 +161,16 @@ class AuthService {
         throw new Error('没有刷新令牌');
       }
 
-      const response = await apiClient.post<ApiResponse<{ token: string; expires_in: number }>>('/auth/refresh', {
+      const response = await apiClient.post<any>('/auth/refresh', {
         refresh_token: refreshToken
       });
 
-      if (response.data.success && response.data.data) {
-        this.setTokens(response.data.data.token);
-        return response.data.data.token;
+      if (!response.success || !response.data) {
+        throw new Error(response.error?.message || '刷新令牌失败');
       }
 
-      throw new Error('刷新令牌失败');
+      this.setTokens(response.data.token);
+      return response.data.token;
     } catch (error) {
       console.error('刷新令牌失败:', error);
       this.clearAuthData();
@@ -165,16 +183,16 @@ class AuthService {
    */
   async getAnalysisHistory(params: PaginationParams): Promise<PaginatedResponse<AnalysisHistory>> {
     try {
-      const response = await apiClient.get<ApiResponse<PaginatedResponse<AnalysisHistory>>>(
+      const response = await apiClient.get<any>(
         '/auth/analysis-history',
         { params }
       );
 
-      if (response.data.success && response.data.data) {
-        return response.data.data;
+      if (!response.success || !response.data) {
+        throw new Error(response.error?.message || '获取分析历史失败');
       }
 
-      throw new Error('获取分析历史失败');
+      return response.data;
     } catch (error) {
       console.error('获取分析历史失败:', error);
       throw this.handleAuthError(error);
@@ -193,16 +211,16 @@ class AuthService {
     tags?: string[];
   }): Promise<AnalysisHistory> {
     try {
-      const response = await apiClient.post<ApiResponse<{ analysis: AnalysisHistory }>>(
+      const response = await apiClient.post<any>(
         '/auth/analysis-history',
         analysisData
       );
 
-      if (response.data.success && response.data.data) {
-        return response.data.data.analysis;
+      if (!response.success || !response.data) {
+        throw new Error(response.error?.message || '保存分析结果失败');
       }
 
-      throw new Error('保存分析结果失败');
+      return response.data.analysis;
     } catch (error) {
       console.error('保存分析结果失败:', error);
       throw this.handleAuthError(error);
@@ -214,16 +232,16 @@ class AuthService {
    */
   async getFavoritePalettes(params: PaginationParams): Promise<PaginatedResponse<FavoritePalette>> {
     try {
-      const response = await apiClient.get<ApiResponse<PaginatedResponse<FavoritePalette>>>(
+      const response = await apiClient.get<any>(
         '/auth/favorite-palettes',
         { params }
       );
 
-      if (response.data.success && response.data.data) {
-        return response.data.data;
+      if (!response.success || !response.data) {
+        throw new Error(response.error?.message || '获取收藏调色板失败');
       }
 
-      throw new Error('获取收藏调色板失败');
+      return response.data;
     } catch (error) {
       console.error('获取收藏调色板失败:', error);
       throw this.handleAuthError(error);
@@ -242,16 +260,16 @@ class AuthService {
     is_public?: boolean;
   }): Promise<FavoritePalette> {
     try {
-      const response = await apiClient.post<ApiResponse<{ palette: FavoritePalette }>>(
+      const response = await apiClient.post<any>(
         '/auth/favorite-palettes',
         paletteData
       );
 
-      if (response.data.success && response.data.data) {
-        return response.data.data.palette;
+      if (!response.success || !response.data) {
+        throw new Error(response.error?.message || '保存调色板失败');
       }
 
-      throw new Error('保存调色板失败');
+      return response.data.palette;
     } catch (error) {
       console.error('保存调色板失败:', error);
       throw this.handleAuthError(error);
@@ -263,10 +281,10 @@ class AuthService {
    */
   async verifyEmail(token: string): Promise<void> {
     try {
-      const response = await apiClient.get<ApiResponse>(`/auth/verify-email?token=${token}`);
+      const response = await apiClient.get<any>(`/auth/verify-email?token=${token}`);
       
-      if (!response.data.success) {
-        throw new Error(response.data.error || '邮箱验证失败');
+      if (!response.success) {
+        throw new Error(response.error?.message || '邮箱验证失败');
       }
     } catch (error) {
       console.error('邮箱验证失败:', error);
@@ -279,10 +297,10 @@ class AuthService {
    */
   async forgotPassword(email: string): Promise<void> {
     try {
-      const response = await apiClient.post<ApiResponse>('/auth/forgot-password', { email });
+      const response = await apiClient.post<any>('/auth/forgot-password', { email });
       
-      if (!response.data.success) {
-        throw new Error(response.data.error || '发送密码重置邮件失败');
+      if (!response.success) {
+        throw new Error(response.error?.message || '发送密码重置邮件失败');
       }
     } catch (error) {
       console.error('发送密码重置邮件失败:', error);
@@ -295,14 +313,14 @@ class AuthService {
    */
   async resetPassword(token: string, newPassword: string, confirmPassword: string): Promise<void> {
     try {
-      const response = await apiClient.post<ApiResponse>('/auth/reset-password', {
+      const response = await apiClient.post<any>('/auth/reset-password', {
         token,
         new_password: newPassword,
         confirm_password: confirmPassword
       });
       
-      if (!response.data.success) {
-        throw new Error(response.data.error || '密码重置失败');
+      if (!response.success) {
+        throw new Error(response.error?.message || '密码重置失败');
       }
     } catch (error) {
       console.error('密码重置失败:', error);
