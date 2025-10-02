@@ -15,7 +15,8 @@ import { initAuthSystem } from './initAuthSystem'
 // 示例：import simpleRoutes from '../../modules/example-simple/backend/routes/simpleRoutes'
 
 // 数据库服务导入
-import { initializeDatabaseService, closeDatabaseService, getDatabaseServiceInfo } from './services/database/databaseServiceFactory'
+import { initializeDatabaseService, closeDatabaseService, getDatabaseServiceInfo, databaseService } from './services/database/databaseServiceFactory'
+import { PostgreSQLService } from './services/database/postgresService'
 
 // 缓存相关导入
 import { initializeRedis, isRedisConnected, closeRedisConnection } from './services/cache/redisClient'
@@ -243,9 +244,9 @@ async function initializeServices(): Promise<void> {
 			console.log(`✅ 数据库服务已初始化: ${dbInfo.type.toUpperCase()}`)
 			
 			// 初始化新认证系统
-			if (dbInfo.pool) {
+			if (dbInfo.type === 'postgresql' && databaseService instanceof PostgreSQLService) {
 				console.log('🔐 初始化认证系统...')
-				const { authRouter } = initAuthSystem(dbInfo.pool)
+				const { authRouter } = initAuthSystem(databaseService.pool)
 				app.use('/api/auth', authRouter)
 				console.log('✅ 新认证系统初始化完成')
 				console.log(`📊 数据库表前缀: "${process.env.TABLE_PREFIX || '(无)'}"`)

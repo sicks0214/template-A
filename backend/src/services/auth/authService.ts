@@ -5,7 +5,7 @@
  */
 
 import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
+import jwt, { SignOptions } from 'jsonwebtoken';
 import { Pool } from 'pg';
 import { AUTH_TABLES } from '../../config/tables';
 
@@ -213,7 +213,7 @@ export class AuthService {
 
     return jwt.sign(payload, this.jwtSecret, {
       expiresIn: this.jwtExpiresIn
-    });
+    } as SignOptions);
   }
 
   /**
@@ -227,7 +227,7 @@ export class AuthService {
 
     return jwt.sign(payload, this.jwtSecret, {
       expiresIn: this.jwtRefreshExpiresIn
-    });
+    } as SignOptions);
   }
 
   /**
