@@ -7,7 +7,9 @@ import path from 'path'
 
 // 路由导入 - 通用模板版本
 import feedbackRoutes from './routes/feedback'
-import authRoutes from './routes/auth'
+
+// 新认证系统导入
+import { initAuthSystem } from './initAuthSystem'
 
 // ⚠️ 模块路由将在这里导入
 // 示例：import simpleRoutes from '../../modules/example-simple/backend/routes/simpleRoutes'
@@ -38,6 +40,9 @@ if (isRailway) {
 
 const app = express()
 const PORT = parseInt(process.env.PORT || '3001', 10)
+
+// ⚙️ 设置 trust proxy - 因为应用在 Nginx 代理后面
+app.set('trust proxy', 1)
 
 // 简单的内存速率限制器
 const requestCounts = new Map<string, { count: number; resetTime: number }>()
@@ -152,7 +157,7 @@ app.get('/api/health', (req, res) => {
 })
 
 // API路由 - 通用模板版本
-app.use('/api/auth', authRoutes)
+// 认证路由将在初始化时动态注册
 app.use('/api/feedback', feedbackRoutes)
 
 // ⚠️ 模块路由将在这里注册
@@ -236,6 +241,17 @@ async function initializeServices(): Promise<void> {
 			await initializeDatabaseService()
 			const dbInfo = getDatabaseServiceInfo()
 			console.log(`✅ 数据库服务已初始化: ${dbInfo.type.toUpperCase()}`)
+			
+			// 初始化新认证系统
+			if (dbInfo.pool) {
+				console.log('🔐 初始化认证系统...')
+				const { authRouter } = initAuthSystem(dbInfo.pool)
+				app.use('/api/auth', authRouter)
+				console.log('✅ 新认证系统初始化完成')
+				console.log(`📊 数据库表前缀: "${process.env.TABLE_PREFIX || '(无)'}"`)
+			} else {
+				console.warn('⚠️ 数据库连接池未初始化，跳过认证系统')
+			}
 		} catch (error) {
 			console.error('❌ 数据库服务初始化失败:', error)
 			// 如果是PostgreSQL失败，可以降级到Mock模式
