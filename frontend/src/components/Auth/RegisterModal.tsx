@@ -61,18 +61,15 @@ export default function RegisterModal({
     }
   };
 
-  // 密码强度检查
+  // 密码强度检查（简化版：只需数字和字母）
   const getPasswordStrength = (password: string) => {
-    let strength = 0;
     const checks = {
-      length: password.length >= 8,
-      lowercase: /[a-z]/.test(password),
-      uppercase: /[A-Z]/.test(password),
-      number: /\d/.test(password),
-      special: /[!@#$%^&*(),.?":{}|<>]/.test(password)
+      length: password.length >= 6,
+      hasLetter: /[a-zA-Z]/.test(password),
+      hasNumber: /\d/.test(password)
     };
     
-    strength = Object.values(checks).filter(Boolean).length;
+    const strength = Object.values(checks).filter(Boolean).length;
     
     return { strength, checks };
   };
@@ -101,13 +98,15 @@ export default function RegisterModal({
       errors.username = t('auth.messages.usernameInvalidChars');
     }
     
-    // 密码验证
+    // 密码验证（简化：只需6位以上，包含数字和字母）
     if (!formData.password) {
       errors.password = t('auth.messages.passwordRequired');
-    } else if (formData.password.length < 8) {
-      errors.password = t('auth.messages.passwordTooShort');
-    } else if (passwordStrength.strength < 3) {
-      errors.password = t('auth.messages.passwordWeakStrength');
+    } else if (formData.password.length < 6) {
+      errors.password = '密码至少需要6个字符';
+    } else if (!/[a-zA-Z]/.test(formData.password)) {
+      errors.password = '密码必须包含字母';
+    } else if (!/\d/.test(formData.password)) {
+      errors.password = '密码必须包含数字';
     }
     
     // 确认密码验证
@@ -278,18 +277,18 @@ export default function RegisterModal({
                 </button>
               </div>
               
-              {/* 密码强度指示器 */}
+              {/* 密码强度指示器（简化版） */}
               {formData.password && (
                 <div className="mt-2">
                   <div className="flex items-center gap-1 mb-2">
-                    {[1, 2, 3, 4, 5].map((level) => (
+                    {[1, 2, 3].map((level) => (
                       <div
                         key={level}
                         className={`h-1 flex-1 rounded-full ${
                           passwordStrength.strength >= level
-                            ? passwordStrength.strength <= 2
+                            ? passwordStrength.strength === 1
                               ? 'bg-red-400'
-                              : passwordStrength.strength <= 3
+                              : passwordStrength.strength === 2
                               ? 'bg-yellow-400'
                               : 'bg-emerald-400'
                             : 'bg-gray-200'
@@ -300,23 +299,15 @@ export default function RegisterModal({
                   <div className="text-xs text-gray-600 space-y-1">
                     <div className="flex items-center gap-2">
                       <Check size={12} className={passwordStrength.checks.length ? 'text-emerald-500' : 'text-gray-300'} />
-                      <span>至少8个字符</span>
+                      <span>至少6个字符</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Check size={12} className={passwordStrength.checks.lowercase ? 'text-emerald-500' : 'text-gray-300'} />
-                      <span>包含小写字母</span>
+                      <Check size={12} className={passwordStrength.checks.hasLetter ? 'text-emerald-500' : 'text-gray-300'} />
+                      <span>包含字母</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Check size={12} className={passwordStrength.checks.uppercase ? 'text-emerald-500' : 'text-gray-300'} />
-                      <span>包含大写字母</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Check size={12} className={passwordStrength.checks.number ? 'text-emerald-500' : 'text-gray-300'} />
+                      <Check size={12} className={passwordStrength.checks.hasNumber ? 'text-emerald-500' : 'text-gray-300'} />
                       <span>包含数字</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Check size={12} className={passwordStrength.checks.special ? 'text-emerald-500' : 'text-gray-300'} />
-                      <span>包含特殊字符</span>
                     </div>
                   </div>
                 </div>

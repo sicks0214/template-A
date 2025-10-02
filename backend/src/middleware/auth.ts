@@ -264,28 +264,21 @@ export const apiRateLimit = rateLimit({
 export function validatePasswordStrength(password: string): { valid: boolean; errors: string[] } {
   const errors: string[] = [];
 
-  if (password.length < 8) {
-    errors.push('密码长度至少8个字符');
+  // 简化密码要求：至少6个字符，包含数字和字母即可
+  if (password.length < 6) {
+    errors.push('密码长度至少6个字符');
   }
 
   if (password.length > 128) {
     errors.push('密码长度不能超过128个字符');
   }
 
-  if (!/[a-z]/.test(password)) {
-    errors.push('密码必须包含小写字母');
-  }
-
-  if (!/[A-Z]/.test(password)) {
-    errors.push('密码必须包含大写字母');
+  if (!/[a-zA-Z]/.test(password)) {
+    errors.push('密码必须包含字母');
   }
 
   if (!/\d/.test(password)) {
     errors.push('密码必须包含数字');
-  }
-
-  if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
-    errors.push('密码必须包含特殊字符');
   }
 
   // 检查常见弱密码
