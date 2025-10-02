@@ -14,8 +14,8 @@ export const getApiBaseUrl = (): string => {
     return 'http://localhost:3001';
   }
   
-  // 生产环境 - VPS部署
-  return 'https://colormagic.online/api'; // site4 VPS部署域名
+  // 生产环境 - 使用相对路径（前后端同域名部署）
+  return '/api';
 };
 
 // API配置
